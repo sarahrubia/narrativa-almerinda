@@ -1,0 +1,24 @@
+plugins:
+  - jekyll-redirect-from
+
+# Headers para arquivos RDF
+defaults:
+  - scope:
+      path: "*.ttl"
+    values:
+      layout: null
+      sitemap: false
+  - scope:
+      path: "*.rdf"
+    values:
+      layout: null
+      sitemap: false
+
+# Content negotiation redirects
+redirect_from:
+  - /concept/main
+  - /concept/related
+  - /concept/sub
+  - /instance/1
+  - /instance/2
+  - /instance/3

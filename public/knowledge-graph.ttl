@@ -1,0 +1,104 @@
+@prefix ex: <https://seuusuario.github.io/seu-repo/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix schema: <https://schema.org/> .
+@prefix dbr: <http://dbpedia.org/resource/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+
+# Exemplo de Grafo de Conhecimento para Apresentação Científica
+# Substitua este conteúdo pelo seu RDF específico
+
+# Metadados VoID para conectar à Linked Data Cloud
+ex:dataset a void:Dataset ;
+    dcterms:title "Grafo de Conhecimento - Figura Histórica"@pt ;
+    dcterms:description "Dataset semântico sobre figura histórica apresentado em evento científico"@pt ;
+    dcterms:creator "Nome do Pesquisador" ;
+    dcterms:created "2024" ;
+    void:feature <http://www.w3.org/ns/formats/Turtle> ;
+    void:dataDump <https://seuusuario.github.io/seu-repo/knowledge-graph.ttl> ;
+    void:vocabulary foaf:, dc:, owl:, schema: ;
+    void:linkset [
+        void:target <http://dbpedia.org> ;
+        void:linkPredicate owl:sameAs ;
+        void:triples 3
+    ] ;
+    void:linkset [
+        void:target <http://www.wikidata.org> ;
+        void:linkPredicate owl:sameAs ;
+        void:triples 3
+    ] .
+
+# Conceitos principais
+ex:MainConcept a owl:Class ;
+    rdfs:label "Conceito Principal"@pt ;
+    rdfs:comment "Conceito central do grafo de conhecimento apresentado"@pt ;
+    dc:creator "Pesquisador" ;
+    owl:sameAs dbr:Main_Concept ;
+    schema:url <https://seuusuario.github.io/seu-repo/concept/main> .
+
+ex:RelatedConcept a owl:Class ;
+    rdfs:label "Conceito Relacionado"@pt ;
+    rdfs:comment "Conceito secundário com relações importantes"@pt ;
+    owl:sameAs dbr:Related_Concept ;
+    schema:url <https://seuusuario.github.io/seu-repo/concept/related> .
+
+ex:SubConcept a owl:Class ;
+    rdfs:label "Subconceito"@pt ;
+    rdfs:subClassOf ex:MainConcept ;
+    owl:sameAs dbr:Sub_Concept ;
+    schema:url <https://seuusuario.github.io/seu-repo/concept/sub> .
+
+# Instâncias
+ex:instance1 a ex:MainConcept, schema:Thing ;
+    rdfs:label "Instância 1"@pt ;
+    ex:hasProperty "Valor da Propriedade 1" ;
+    ex:relatedTo ex:instance2 ;
+    owl:sameAs dbr:Instance_1 ;
+    owl:sameAs wd:Q123456 ;
+    schema:url <https://seuusuario.github.io/seu-repo/instance/1> .
+
+ex:instance2 a ex:RelatedConcept, schema:Thing ;
+    rdfs:label "Instância 2"@pt ;
+    ex:hasProperty "Valor da Propriedade 2" ;
+    ex:connectedTo ex:instance3 ;
+    owl:sameAs dbr:Instance_2 ;
+    owl:sameAs wd:Q789012 ;
+    schema:url <https://seuusuario.github.io/seu-repo/instance/2> .
+
+ex:instance3 a ex:SubConcept, schema:Thing ;
+    rdfs:label "Instância 3"@pt ;
+    ex:hasProperty "Valor da Propriedade 3" ;
+    owl:sameAs dbr:Instance_3 ;
+    owl:sameAs wd:Q345678 ;
+    schema:url <https://seuusuario.github.io/seu-repo/instance/3> .
+
+# Propriedades
+ex:hasProperty a owl:DatatypeProperty ;
+    rdfs:label "tem propriedade"@pt ;
+    rdfs:domain ex:MainConcept ;
+    rdfs:range rdfs:Literal .
+
+ex:relatedTo a owl:ObjectProperty ;
+    rdfs:label "relacionado com"@pt ;
+    rdfs:domain ex:MainConcept ;
+    rdfs:range ex:RelatedConcept .
+
+ex:connectedTo a owl:ObjectProperty ;
+    rdfs:label "conectado com"@pt ;
+    rdfs:domain ex:RelatedConcept ;
+    rdfs:range ex:SubConcept .
+
+ex:KnowledgeGraph a owl:Ontology, void:Dataset ;
+    rdfs:label "Grafo de Conhecimento - Apresentação Científica"@pt ;
+    dc:title "Grafo de Conhecimento para Evento Científico" ;
+    dc:description "Representação semântica dos conceitos e relacionamentos identificados na pesquisa" ;
+    dc:creator "Nome do Pesquisador" ;
+    dc:date "2024" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    schema:url <https://seuusuario.github.io/seu-repo/> ;
+    void:sparqlEndpoint <https://seuusuario.github.io/seu-repo/sparql> .
