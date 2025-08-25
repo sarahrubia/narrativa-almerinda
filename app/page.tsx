@@ -61,12 +61,12 @@ export default function KnowledgeGraphPortfolio() {
               ],
               "@type": ["Dataset", "CreativeWork"],
               "@id": "https://sarahrubia.github.io/narrativa-almerinda/dataset",
-              name: "Grafo de Conhecimento - Figura Histórica",
+              name: "Grafo de Conhecimento da Trajetória de Almerinda Farias Gama",
               description:
-                "Dataset semântico sobre figura histórica apresentado em evento científico, representando estruturas de conhecimento e relacionamentos identificados durante a pesquisa acadêmica.",
+                "Dataset semântico sobre figura histórica, representando estruturas de conhecimento e relacionamentos identificados durante a pesquisa acadêmica.",
               creator: {
                 "@type": "Person",
-                name: "Nome do Pesquisador",
+                name: "Sarah Rúbia de Oliveira Santos",
               },
               dateCreated: "2024",
               dateModified: "2024",
@@ -82,22 +82,22 @@ export default function KnowledgeGraphPortfolio() {
                 "Linked Data",
                 "Knowledge Graph",
                 "Semantic Web",
+                "Information Science",
                 "Digital Humanities",
-                "Historical Research",
                 "Ontology",
               ],
               inLanguage: "pt-BR",
               about: {
                 "@type": "Thing",
                 name: "Figura Histórica",
-                description: "Análise semântica de figura histórica e suas contribuições",
+                description: "Análise semântica da trajetória de Almerinda Farias Gama e suas contribuições",
               },
               isPartOf: {
                 "@type": "Dataset",
                 "@id": "http://lod-cloud.net/",
                 name: "Linked Open Data Cloud",
               },
-              sameAs: ["http://dbpedia.org/resource/Knowledge_Graph_Dataset", "http://www.wikidata.org/entity/Q123456"],
+              // sameAs: ["http://dbpedia.org/resource/Knowledge_Graph_Dataset", "http://www.wikidata.org/entity/Q123456"],
             }),
           }}
         />
@@ -119,9 +119,9 @@ export default function KnowledgeGraphPortfolio() {
             <div className="flex items-center justify-center gap-3 mb-6">
               <Network className="h-12 w-12 text-blue-700" />
               <div>
-                <h1 className="text-5xl font-bold text-gray-900 dark:text-white mb-2">Grafo de Conhecimento</h1>
+                <h1 className="text-5xl font-bold text-gray-900 dark:text-white mb-2">Trajetória de Almerinda Farias Gama</h1>
                 <p className="text-lg text-blue-700 dark:text-blue-400 font-medium">
-                  Apresentação Científica - Visualização Interativa
+                  Visualização Interativa
                 </p>
               </div>
             </div>
@@ -129,11 +129,11 @@ export default function KnowledgeGraphPortfolio() {
             <div className="flex items-center justify-center gap-6 text-sm text-gray-600 dark:text-gray-400 mb-6">
               <div className="flex items-center gap-2">
                 <Users className="h-4 w-4" />
-                <span>Pesquisa Acadêmica</span>
+                <span>Tese de Doutorado</span>
               </div>
               <div className="flex items-center gap-2">
                 <Calendar className="h-4 w-4" />
-                <span>Evento Científico</span>
+                <span>Grafo de Conhecimento</span>
               </div>
               <div className="flex items-center gap-2">
                 <FileText className="h-4 w-4" />
@@ -142,9 +142,7 @@ export default function KnowledgeGraphPortfolio() {
             </div>
 
             <p className="text-xl text-gray-700 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
-              Este grafo de conhecimento representa a estrutura semântica e os relacionamentos identificados durante a
-              pesquisa. Explore a visualização interativa para compreender as conexões e hierarquias dos conceitos
-              apresentados.
+              Este grafo de conhecimento representa a estrutura semântica e os relacionamentos identificados durante a pesquisa sobre a trajetória de Almerinda Farias Gama. Explore a visualização interativa para compreender as conexões e hierarquias dos conceitos apresentados.
             </p>
           </div>
 
@@ -155,58 +153,39 @@ export default function KnowledgeGraphPortfolio() {
                 Contexto Histórico e Narrativa
               </CardTitle>
               <CardDescription className="text-lg">
-                A figura histórica e os eventos que fundamentam este grafo de conhecimento
+                Almerinda Farias Gama e os eventos que fundamentam este grafo de conhecimento.
               </CardDescription>
             </CardHeader>
             <CardContent>
               <div className="grid md:grid-cols-3 gap-8 items-start">
                 <div className="md:col-span-2 space-y-4">
                   <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-lg">
-                    Esta pesquisa explora a vida e obra de uma figura histórica fundamental, cujas contribuições
-                    moldaram significativamente o desenvolvimento do conhecimento em sua área. Através de uma análise
-                    sistemática de documentos históricos, correspondências e registros acadêmicos, foi possível mapear
-                    as complexas redes de relacionamentos intelectuais e institucionais que caracterizaram sua
-                    trajetória.
+                    A trajetória política de luta de Almerinda Farias Gama --- advogada, sindicalista e uma das primeiras mulheres negras a ocupar espaços institucionais de destaque na política brasileira --- intensificou-se estrategicamente em 1929, quando migrou de Alagoas para o Rio de Janeiro. Em um Brasil recém-emergido do sistema escravista, onde os espaços de poder político eram estruturalmente restritos através de barreiras interseccionais de gênero e raça, sua filiação à Federação Brasileira pelo Progresso Feminino (FBPM), liderada por Bertha Lutz, constituiu um ato de relevância política excepcional. Neste contexto, ela não apenas engajou-se na luta pela emancipação feminina, mas introduziu criticamente no movimento majoritariamente branco a perspectiva específica da mulher negra e trabalhadora, conceitualizando o sufrágio como "arma" estratégica fundamental contra as estruturas opressivas do sexismo e do racismo.
                   </p>
 
                   <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-lg">
-                    O grafo de conhecimento apresentado representa não apenas os fatos biográficos, mas também as
-                    conexões conceituais entre suas ideias, influências recebidas e exercidas, colaborações acadêmicas e
-                    o impacto de suas descobertas no contexto científico da época. Cada nó do grafo corresponde a
-                    entidades específicas - pessoas, instituições, conceitos, publicações - enquanto as arestas
-                    representam os diversos tipos de relacionamentos identificados na pesquisa.
+                    Sua atuação política caracterizou-se pela multiplicidade de frentes de ação. Como pioneira do feminismo interseccional, sua participação no II Congresso Internacional Feminista em 1931 transcendeu o papel de congressista convencional, constituindo-se como voz representativa de uma parcela estruturalmente invisibilizada da população feminina brasileira. Paralelamente, sua liderança sindical como primeira presidente do Sindicato dos Datilógrafas e Taquígrafas operou como plataforma institucional para uma luta interseccional articulada, que abrangia simultaneamente a "independência econômica da mulher" e o combate sistemático à desigualdade salarial que historicamente penalizava com maior intensidade as mulheres negras trabalhadoras.
                   </p>
 
                   <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-lg">
-                    A metodologia empregada combina técnicas de análise histórica tradicional com ferramentas modernas
-                    de representação semântica, permitindo uma visualização interativa que revela padrões e conexões que
-                    poderiam passar despercebidos em análises convencionais. Este trabalho contribui tanto para o
-                    conhecimento histórico específico quanto para o desenvolvimento de metodologias digitais em
-                    humanidades.
-                  </p>
-
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-lg">
-                    A visualização interativa permite explorar diferentes aspectos da rede de conhecimento, desde
-                    relacionamentos pessoais até influências conceituais, oferecendo uma perspectiva multidimensional
-                    sobre o legado intelectual estudado. Os dados foram estruturados seguindo padrões de ontologias
-                    reconhecidas, garantindo interoperabilidade e possibilitando futuras expansões da pesquisa.
+                    O momento histórico mais emblemático de seu pioneirismo político materializou-se em 20 de julho de 1933. Indicada como delegada sindical, Almerinda exerceu o voto na escolha da bancada classista para a Assembleia Nacional Constituinte de 1934. Neste ato histórico de significância excepcional, ela constituiu-se como única representante feminina --- e, particularmente, uma mulher negra --- presente no processo decisório, rompendo simultaneamente barreiras estruturais de gênero e raça através de um único gesto político. Sua candidatura em 1934, embora eleitoralmente não vitoriosa, consolidou definitivamente este legado transformador, reforçando sua posição como figura seminal na historiografia da participação política negra e feminina no Brasil.
                   </p>
                 </div>
 
                 <div className="flex flex-col items-center space-y-4">
                   <div className="w-full max-w-sm">
                     <img
-                      src="/historical-academic-portrait.png"
-                      alt="Figura histórica representada no grafo de conhecimento"
+                      src="/Retrato_de_Almerinda_Farias_Gama.png"
+                      alt="Retrato de Almerinda Farias Gama, produzido entre 1910 e 1928. A imagem integra o arquivo pessoal de Almerinda que faz parte do acervo histórico da FGV CPDOC."
                       className="w-full h-auto rounded-lg shadow-lg border border-gray-200 dark:border-gray-700"
                     />
                   </div>
                   <div className="text-center">
                     <p className="text-sm text-gray-600 dark:text-gray-400 italic">
-                      Figura histórica central do grafo de conhecimento
+                      Retrato de Almerinda Farias Gama, produzido entre 1910 e 1928.
                     </p>
                     <p className="text-xs text-gray-500 dark:text-gray-500 mt-1">
-                      Retrato baseado em documentos históricos
+                      A imagem integra o arquivo pessoal de Almerinda que faz parte do acervo histórico da FGV CPDOC.
                     </p>
                   </div>
                 </div>
@@ -289,7 +268,7 @@ export default function KnowledgeGraphPortfolio() {
                 rel="noopener noreferrer"
                 className="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300 hover:underline transition-colors"
               >
-                Powered by Sketch Zazuko
+                Visualização Powered by Sketch Zazuko
               </a>
             </div>
           </div>
