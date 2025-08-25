@@ -14,4 +14,4 @@ const nextConfig = {
   basePath: '/narrativa-almerinda'
 }
 
-export default nextConfig
+module.exports = nextConfig;
