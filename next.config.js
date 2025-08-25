@@ -11,7 +11,8 @@ const nextConfig = {
   },
   output: 'export',
   trailingSlash: true,
-  basePath: '/narrativa-almerinda'
+  basePath: process.env.NODE_ENV === 'production' ? '/narrativa-almerinda' : '',
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/narrativa-almerinda/' : '',
 }
 
 module.exports = nextConfig;
