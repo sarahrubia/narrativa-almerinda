@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     url: "https://sarahrubia.github.io/narrativa-almerinda/",
     images: [
       {
-        url: "https://sarahrubia.github.io/narrativa-almerinda/historical-academic-portrait.png",
+        url: "/historical-academic-portrait.png",
         width: 800,
         height: 600,
         alt: "Figura histórica representada no grafo de conhecimento",
