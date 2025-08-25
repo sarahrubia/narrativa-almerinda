@@ -19,7 +19,7 @@ export default function SobrePage() {
             Voltar ao Grafo de Conhecimento
           </Link>
           <h1 className="text-4xl font-bold text-slate-800 mb-2">Sobre o Projeto</h1>
-          <p className="text-slate-600 text-lg">Informações sobre a pesquisa, metodologia e autoria</p>
+          <p className="text-slate-600 text-lg">Informações sobre a pesquisa, metodologia e autoria.</p>
         </div>
 
         <div className="space-y-8">
