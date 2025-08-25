@@ -1,104 +1,937 @@
-@prefix ex: <https://sarahrubia.github.io/narrativa-almerinda/> .
-@prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+# --- PREFIXOS ---
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix nont: <https://dlnarratives.eu/ontology#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix schema: <http://schema.org/> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
-@prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix void: <http://rdfs.org/ns/void#> .
-@prefix schema: <https://schema.org/> .
-@prefix dbr: <http://dbpedia.org/resource/> .
-@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix bio: <http://purl.org/vocab/bio/0.1/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix data: <https://example.com/narrative/almerinda/> .
 
-# Exemplo de Grafo de Conhecimento para Apresentação Científica
-# Substitua este conteúdo pelo seu RDF específico
+# --- DECLARAÇÃO DA ONTOLOGIA ---
+data: a owl:Ontology ;
+    owl:imports <https://dlnarratives.eu/ontology> ,
+                <http://xmlns.com/foaf/0.1/> ,
+                <http://www.w3.org/2004/02/skos/core> ,
+                <http://purl.org/dc/elements/1.1/> ,
+                <http://purl.org/vocab/bio/0.1/> ;
+    rdfs:label "Ontologia da Narrativa de Almerinda Farias Gama"@pt ;
+    rdfs:comment "Ontologia especializada para representar a trajetória interseccional de Almerinda Farias Gama, implementando estratégias de enriquecimento semântico para capturar agência, identidade e contexto histórico."@pt .
 
-# Metadados VoID para conectar à Linked Data Cloud
-ex:dataset a void:Dataset ;
-    dcterms:title "Grafo de Conhecimento - Figura Histórica"@pt ;
-    dcterms:description "Dataset semântico sobre figura histórica apresentado em evento científico"@pt ;
-    dcterms:creator "Nome do Pesquisador" ;
-    dcterms:created "2024" ;
-    void:feature <http://www.w3.org/ns/formats/Turtle> ;
-    void:dataDump <https://sarahrubia.github.io/narrativa-almerinda/knowledge-graph.ttl> ;
-    void:vocabulary foaf:, dc:, owl:, schema: ;
-    void:linkset [
-        void:target <http://dbpedia.org> ;
-        void:linkPredicate owl:sameAs ;
-        void:triples 3
+# ============================================================================
+# PROPRIEDADES DE AGÊNCIA ENRIQUECIDAS (VOCABULÁRIO ESPECIALIZADO)
+# ============================================================================
+# ENRIQUECIMENTO: Criação do "vocabulário de agência" conforme discussão teórica
+# Cada verbo captura a intencionalidade das ações, transcendendo propriedades genéricas
+
+data:foiMotivadaPor rdf:type owl:ObjectProperty ;
+    rdfs:subPropertyOf crm:P17_was_motivated_by ;
+    rdfs:label "foi motivada por"@pt ;
+    rdfs:comment "Propriedade especializada para expressar motivações políticas e sociais específicas de ativistas, permitindo capturar a agência intencional além de simples participação em eventos."@pt .
+
+data:lutouPor rdf:type owl:ObjectProperty ;
+    rdfs:label "lutou por"@pt ;
+    rdfs:comment "Verbo de agência criado para formalizar a natureza ativa e intencional do ativismo político, superando limitações de propriedades genéricas como schema:about."@pt .
+
+data:combateu rdf:type owl:ObjectProperty;
+    rdfs:label "combateu"@pt ;
+    rdfs:comment "Expressa oposição ativa e sistemática a estruturas opressivas, capturando a dimensão confrontativa do ativismo interseccional."@pt .
+
+data:introduziu rdf:type owl:ObjectProperty ;
+    rdfs:label "introduziu"@pt ;
+    rdfs:comment "Representa a ação de trazer novas perspectivas ou elementos para contextos existentes, especialmente relevante para agência de grupos marginalizados."@pt .
+
+data:rompeu rdf:type owl:ObjectProperty;
+    rdfs:label "rompeu"@pt ;
+    rdfs:comment "Formaliza ações transformativas que quebraram barreiras estruturais, especialmente barreiras de gênero e raça no contexto político brasileiro."@pt .
+
+data:presidiu rdf:type owl:ObjectProperty ;
+    rdfs:label "presidiu"@pt ;
+    rdfs:comment "Especifica o exercício de liderança institucional, qualificando além de simples participação organizacional."@pt .
+
+data:fundou rdf:type owl:ObjectProperty ;
+    rdfs:label "fundou"@pt ;
+    rdfs:subPropertyOf crm:P14_carried_out_by .
+
+data:representou rdf:type owl:ObjectProperty ;
+    rdfs:label "representou"@pt ;
+    rdfs:comment "Expressa a ação de dar voz a grupos ou perspectivas, fundamental para entender o papel de mediação de ativistas interseccionais."@pt .
+
+data:defendeu rdf:type owl:ObjectProperty ;
+    rdfs:label "defendeu"@pt ;
+    rdfs:subPropertyOf data:lutouPor ;
+    rdfs:comment "Especialização de 'lutou por' focada na atuação jurídica e advocatícia, refletindo a formação profissional de Almerinda."@pt .
+
+data:consolidou rdf:type owl:ObjectProperty ;
+    rdfs:label "consolidou"@pt ;
+    rdfs:comment "Representa ações que estabeleceram legados duradouros, conectando eventos históricos a impactos de longo prazo."@pt .
+
+# ============================================================================
+# IDENTIDADE INTERSECCIONAL ENRIQUECIDA
+# ============================================================================
+# ENRIQUECIMENTO: Implementação da "abordagem facetada" para superar reducionismo identitário
+
+data:person_almerinda-farias-gama
+    rdf:type crm:E21_Person , nont:Actor , foaf:Person , schema:Person ;
+    rdfs:label "Almerinda Farias Gama"@pt ;
+    owl:sameAs <http://www.wikidata.org/entity/Q104034873> ;
+    foaf:name "Almerinda Farias Gama"@pt ;
+    skos:note "Figura central da narrativa, advogada, sindicalista e ativista pioneira na participação política de mulheres negras no Brasil. Sua relevância reside na intersecção de suas identidades: mulher, negra e ativista no contexto pós-abolição."@pt ;
+    
+    # Eventos biográficos básicos
+    bio:birth data:event_nascimento-almerinda-1899 ;
+    bio:death data:event_morte-almerinda-1999 ;
+    
+    # ENRIQUECIMENTO: Papéis facetados para representação holística da identidade
+    bio:withRole data:role_advogada, data:role_sindicalista, data:role_delegada-sindical, 
+                 data:role_candidata, data:role_militante, data:role_presidente-sindicato, 
+                 data:role_jornalista ;
+    
+    # ENRIQUECIMENTO: Vocabulário de agência - verbos que expressam ações intencionais
+    data:lutouPor data:concept_emancipacao-feminina, data:concept_independencia-economica, 
+                  data:concept_direitos-trabalhadoras, data:concept_sufragio-feminino ;
+    data:combateu data:concept_racismo, data:concept_machismo, data:concept_desigualdade-salarial ;
+    data:defendeu data:concept_direitos-trabalhadoras ;
+    data:introduziu data:concept_perspectiva-mulher-negra-trabalhadora ;
+    data:representou data:concept_populacao-feminina-invisibilizada ;
+    data:rompeu data:concept_barreiras-de-genero-e-raca ;
+    data:consolidou data:concept_pioneirismo-politico-negro-feminino ;
+    
+    # ENRIQUECIMENTO: Identidade racial contextualizada historicamente
+    schema:knowsAbout data:concept_feminismo-negro ;
+    rdfs:comment "Sua identidade como 'mulher negra' carrega peso histórico específico no Brasil pós-abolição, sendo fator determinante nos desafios enfrentados e na singularidade de sua agência política."@pt .
+
+# Outras pessoas do grafo
+data:person_bertha-lutz
+    rdf:type crm:E21_Person , nont:Actor , foaf:Person , schema:Person ;
+    rdfs:label "Bertha Lutz"@pt ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1789913> ;
+    foaf:name "Bertha Lutz"@pt .
+
+data:person_carmen-portinho
+    rdf:type crm:E21_Person , nont:Actor , foaf:Person , schema:Person ;
+    rdfs:label "Carmen Portinho"@pt ;
+    owl:sameAs <http://www.wikidata.org/entity/Q9698118> ;
+    foaf:name "Carmen Portinho"@pt .
+
+data:person_maria-lacerda-de-moura
+    rdf:type crm:E21_Person , nont:Actor , foaf:Person , schema:Person ;
+    rdfs:label "Maria Lacerda de Moura"@pt ;
+    owl:sameAs <http://www.wikidata.org/entity/Q10325998> ;
+    foaf:name "Maria Lacerda de Moura"@pt .
+
+data:person_maria-luisa-doria-de-bittencourt
+    rdf:type crm:E21_Person, nont:Actor, foaf:Person, schema:Person;
+    rdfs:label "Maria Luisa Dória de Bittencourt"@pt;
+    foaf:name "Maria Luisa Dória de Bittencourt"@pt .
+
+data:person_celina-guimaraes-viana
+    rdf:type crm:E21_Person, nont:Actor, foaf:Person, schema:Person;
+    rdfs:label "Celina Guimarães Viana"@pt;
+    owl:sameAs <http://www.wikidata.org/entity/Q5058100>;
+    foaf:name "Celina Guimarães Viana"@pt .
+
+# --- ATORES: ORGANIZAÇÕES ---
+data:org_fbpm
+    rdf:type crm:E74_Group , nont:Actor , foaf:Organization , schema:Organization ;
+    rdfs:label "Federação Brasileira pelo Progresso da Mulher (FBPM)"@pt ;
+    owl:sameAs <http://www.wikidata.org/entity/Q10280186> ;
+    foaf:name "Federação Brasileira pelo Progresso da Mulher"@pt ;
+    rdfs:comment "Organização feminista que, embora majoritariamente branca, recebeu a contribuição de Almerinda para incorporar a perspectiva da mulher negra e trabalhadora."@pt .
+
+data:org_sindicato-datilografas
+    rdf:type crm:E74_Group , nont:Actor , foaf:Organization , schema:Organization ;
+    rdfs:label "Sindicato dos Datilógrafas e Taquígrafas"@pt ;
+    rdfs:comment "Primeira organização sindical presidida por uma mulher negra no Brasil, representando uma plataforma para luta interseccional."@pt .
+
+data:org_anc-1934
+    rdf:type crm:E74_Group , nont:Actor , schema:Organization ;
+    rdfs:label "Assembleia Nacional Constituinte de 1934"@pt ;
+    owl:sameAs <http://www.wikidata.org/entity/Q18482315> .
+
+data:org_comissao-apoio-conferencia
+    rdf:type crm:E74_Group, nont:Actor, schema:Organization;
+    rdfs:label "Comissão de apoio à Conferência de Mulheres Trabalhadoras"@pt .
+
+# --- LUGARES ---
+data:place_rio-de-janeiro-city
+    rdf:type crm:E53_Place , schema:City ;
+    rdfs:label "Rio de Janeiro (Cidade)"@pt ;
+    owl:sameAs <http://www.wikidata.org/entity/Q8678> .
+
+data:place_alagoas
+    rdf:type crm:E53_Place , schema:State ;
+    rdfs:label "Alagoas"@pt ;
+    owl:sameAs <http://www.wikidata.org/entity/Q40874> .
+
+data:place_sao-paulo-city
+    rdf:type crm:E53_Place , schema:City ;
+    rdfs:label "São Paulo (Cidade)"@pt ;
+    owl:sameAs <http://www.wikidata.org/entity/Q174> .
+
+data:place_brasil
+    rdf:type crm:E53_Place, schema:Country;
+    rdfs:label "Brasil"@pt;
+    owl:sameAs <http://www.wikidata.org/entity/Q155>.
+
+# --- OBRAS ---
+data:work_jornal-a-batalha
+    rdf:type crm:E90_Symbolic_Object, schema:Periodical;
+    rdfs:label "Jornal A Batalha"@pt.
+
+# ============================================================================
+# PAPÉIS FACETADOS PARA REPRESENTAÇÃO HOLÍSTICA DA IDENTIDADE
+# ============================================================================
+# ENRIQUECIMENTO: Cada papel como faceta ontológica da identidade total
+
+data:role_advogada rdf:type nont:Role; 
+    rdfs:label "advogada"@pt ;
+    rdfs:comment "Papel profissional que fundamenta sua atuação na defesa jurídica dos direitos das trabalhadoras."@pt .
+
+data:role_sindicalista rdf:type nont:Role; 
+    rdfs:label "sindicalista"@pt ;
+    rdfs:comment "Papel organizativo fundamental para sua luta pela independência econômica das mulheres trabalhadoras."@pt .
+
+data:role_delegada-sindical rdf:type nont:Role; 
+    rdfs:label "delegada sindical"@pt ;
+    rdfs:comment "Papel específico que permitiu sua participação histórica na votação da bancada classista para a Constituinte."@pt .
+
+data:role_candidata rdf:type nont:Role; 
+    rdfs:label "candidata"@pt ;
+    rdfs:comment "Papel político pioneiro como uma das primeiras mulheres negras a se candidatar no Brasil."@pt .
+
+data:role_militante rdf:type nont:Role; 
+    rdfs:label "militante"@pt ;
+    rdfs:comment "Papel de ativismo político que perpassa toda sua trajetória."@pt .
+
+data:role_presidente-sindicato rdf:type nont:Role; 
+    rdfs:label "presidente de sindicato"@pt ;
+    rdfs:comment "Papel de liderança institucional pioneiro para mulheres negras no movimento sindical brasileiro."@pt .
+
+data:role_jornalista rdf:type nont:Role; 
+    rdfs:label "jornalista"@pt ;
+    rdfs:comment "Papel comunicativo para difusão das ideias feministas e trabalhistas."@pt .
+
+# ============================================================================
+# CONCEITOS ENRIQUECIDOS COM HIERARQUIAS E ESPECIALIZAÇÕES INTERSECCIONAIS
+# ============================================================================
+
+# Conceitos fundamentais do movimento
+data:concept_movimento-sufragista rdf:type skos:Concept; 
+    skos:prefLabel "Movimento Sufragista"@pt ;
+    rdfs:comment "Movimento político pela conquista do direito ao voto feminino, contexto principal da atuação de Almerinda."@pt .
+
+data:concept_emancipacao-feminina rdf:type skos:Concept; 
+    skos:prefLabel "Emancipação da Mulher"@pt ;
+    skos:broader data:concept_movimento-sufragista ;
+    rdfs:comment "Conceito central que motivou a filiação de Almerinda à FBPM."@pt .
+
+data:concept_sufragio-feminino rdf:type skos:Concept;
+    skos:prefLabel "Sufrágio Feminino"@pt ;
+    skos:broader data:concept_emancipacao-feminina ;
+    rdfs:comment "Direito ao voto visto por Almerinda como 'arma' contra sexismo e racismo."@pt .
+
+# ENRIQUECIMENTO: Conceitos interseccionais específicos criados conforme discussão
+data:concept_feminismo-negro
+    rdf:type skos:Concept ;
+    skos:prefLabel "Feminismo Negro"@pt ;
+    skos:broader data:concept_movimento-sufragista ;
+    rdfs:comment "Perspectiva feminista que incorpora a experiência específica da mulher negra, introduzida por Almerinda na FBPM majoritariamente branca."@pt .
+
+data:concept_pioneirismo-politico-negro-feminino
+    rdf:type skos:Concept ;
+    skos:prefLabel "Pioneirismo Político Negro Feminino"@pt ;
+    skos:broader data:concept_pioneirismo-politico ;
+    rdfs:comment "Conceito específico para capturar a singularidade histórica da participação política de mulheres negras no Brasil pós-abolição."@pt .
+
+data:concept_perspectiva-mulher-negra-trabalhadora
+    rdf:type skos:Concept ;
+    skos:prefLabel "Perspectiva da mulher negra trabalhadora"@pt ;
+    skos:broader data:concept_feminismo-negro ;
+    rdfs:comment "Perspectiva específica introduzida por Almerinda no movimento feminista, articulando gênero, raça e classe."@pt .
+
+data:concept_populacao-feminina-invisibilizada
+    rdf:type skos:Concept ;
+    skos:prefLabel "População feminina invisibilizada"@pt ;
+    rdfs:comment "Parcela da população feminina representada por Almerinda no II Congresso Internacional Feminista."@pt .
+
+# Conceitos de luta e resistência
+data:concept_direitos-trabalhadoras rdf:type skos:Concept; 
+    skos:prefLabel "Direitos das trabalhadoras"@pt ;
+    rdfs:comment "Pauta central da atuação sindical de Almerinda, articulando gênero e classe."@pt .
+
+data:concept_independencia-economica rdf:type skos:Concept; 
+    skos:prefLabel "Independência econômica da mulher"@pt ;
+    rdfs:comment "Objetivo estratégico da liderança sindical de Almerinda."@pt .
+
+data:concept_garantia-legal-trabalhador rdf:type skos:Concept; 
+    skos:prefLabel "Garantia legal do trabalhador"@pt .
+
+data:concept_pioneirismo-politico rdf:type skos:Concept; 
+    skos:prefLabel "Pioneirismo político feminino"@pt .
+
+# ENRIQUECIMENTO: Conceitos de opressão estrutural
+data:concept_racismo
+    rdf:type skos:Concept ;
+    skos:prefLabel "Racismo"@pt ;
+    rdfs:comment "Estrutura de opressão sistematicamente combatida por Almerinda através de sua agência política."@pt .
+
+data:concept_machismo
+    rdf:type skos:Concept ;
+    skos:prefLabel "Machismo"@pt ;
+    rdfs:comment "Estrutura de opressão de gênero combatida por Almerinda através do movimento feminista e sindical."@pt .
+
+data:concept_desigualdade-salarial rdf:type skos:Concept; 
+    skos:prefLabel "Desigualdade salarial"@pt ;
+    rdfs:comment "Discriminação econômica que motivou a migração de Almerinda para o Rio de Janeiro e sua luta sindical."@pt .
+
+data:concept_barreiras-de-genero-e-raca rdf:type skos:Concept; 
+    skos:prefLabel "Barreiras de gênero e raça"@pt ;
+    rdfs:comment "Obstáculos estruturais rompidos por Almerinda através de sua participação política pioneira, especialmente na votação da bancada classista."@pt .
+
+# ============================================================================
+# OBJETOS DIGITAIS ENRIQUECIDOS COM CONEXÕES SEMÂNTICAS ESPECÍFICAS
+# ============================================================================
+
+# FGV - Documentos Pessoais
+data:digitalObject_documentos-pessoais-fgv
+    rdf:type schema:DigitalDocument , crm:E31_Document ;
+    rdfs:label "Documentos pessoais de Almerinda Farias Gama (Título de eleitor, carteiras de associação)"@pt ;
+    dc:source "Fundação Getúlio Vargas - Coleção Almerinda Farias Gama" ;
+    dc:identifier "AFG dp 1933.02.17" ;
+    dc:description "Conjunto de documentos pessoais evidenciando a participação política e sindical de Almerinda."@pt ;
+    schema:url <https://docvirt.com/docreader.net/DocReader.aspx?bib=AFG_DP> ;
+    # ENRIQUECIMENTO: Conexão específica com eventos narrativos
+    crm:P129_is_about data:person_almerinda-farias-gama, data:org_sindicato-datilografas,
+                      data:event_almerinda-presidente-sindicato ;
+    crm:P4_has_time-span [
+        rdf:type crm:E52_Time-Span ;
+        rdfs:label "1933-02-17 a 1943-09-22"
     ] ;
-    void:linkset [
-        void:target <http://www.wikidata.org> ;
-        void:linkPredicate owl:sameAs ;
-        void:triples 3
+    dc:rights "Os direitos de uso devem ser verificados no repositório de origem (Fundação Getúlio Vargas)."@pt .
+
+# FGV - Panfleto de Campanha Eleitoral
+data:digitalObject_panfleto-1934
+    rdf:type schema:DigitalDocument , crm:E31_Document ;
+    rdfs:label "Panfleto da campanha eleitoral de Almerinda Farias Gama (1934)"@pt ;
+    dc:source "Fundação Getúlio Vargas - Coleção Almerinda Farias Gama" ;
+    dc:identifier "AFG d 1934.10.00" ;
+    dc:date "1934-10"^^xsd:gYearMonth ;
+    dc:description "Panfleto evidenciando a plataforma política de Almerinda centrada nos direitos das trabalhadoras."@pt ;
+    schema:url <https://docvirt.com/docreader.net/DocReader.aspx?bib=AFG_D> ;
+    # ENRIQUECIMENTO: Conexão direta fonte-evento-conceito
+    crm:P129_is_about data:event_candidatura-1934, data:person_almerinda-farias-gama, 
+                      data:concept_independencia-economica, data:concept_garantia-legal-trabalhador ;
+    dc:rights "Os direitos de uso devem ser verificados no repositório de origem (Fundação Getúlio Vargas)."@pt ;
+    rdfs:comment "Este documento materializa a conexão entre fonte documental e evento narrativo, superando a fragmentação original dos acervos."@pt .
+
+# FGV - Recorte "Escreva-se a história"
+data:digitalObject_recorte-escreva-se-a-historia
+    rdf:type schema:DigitalDocument , crm:E31_Document ;
+    rdfs:label "Recorte de jornal com o texto 'Escreva-se a história'"@pt ;
+    dc:source "Fundação Getúlio Vargas - Coleção Almerinda Farias Gama" ;
+    dc:creator data:person_almerinda-farias-gama ;
+    dc:date "1975-12-14"^^xsd:date ;
+    schema:url <https://docvirt.com/docreader.net/DocReader.aspx?bib=AFG_D> ;
+    crm:P129_is_about data:concept_movimento-sufragista, data:org_fbpm, data:person_bertha-lutz ;
+    dc:rights "Os direitos de uso devem ser verificados no repositório de origem (Fundação Getúlio Vargas)."@pt .
+
+# Arquivo Nacional - Fotografia do Congresso
+data:digitalObject_foto-congresso-1931
+    rdf:type schema:ImageObject , crm:E38_Image ;
+    rdfs:label "Excursão das participantes do II Congresso Internacional Feminista"@pt ;
+    dc:source "Arquivo Nacional - Brasiliana Fotográfica" ;
+    dc:date "1931-06"^^xsd:gYearMonth ;
+    schema:url <https://brasilianafotografica.bn.gov.br/brasiliana/handle/20.500.12156.1/5028> ;
+    # ENRIQUECIMENTO: Propriedade mais específica para representação visual
+    crm:P138_represents data:event_congresso-feminista-1931 ;
+    crm:P129_is_about data:concept_feminismo-negro ;
+    schema:license <http://creativecommons.org/publicdomain/mark/1.0/> ;
+    dc:rights "Esta imagem é de domínio público."@pt ;
+    foaf:depicts data:person_almerinda-farias-gama, data:person_bertha-lutz, data:person_carmen-portinho ;
+    rdfs:comment "Registro visual que documenta a participação de Almerinda como 'voz representante da população feminina invisibilizada'."@pt .
+
+# Hemeroteca Digital - Reconhecimento do Sindicato
+data:digitalObject_recorte-reconhecimento-sindicato
+    rdf:type schema:DigitalDocument , crm:E31_Document ;
+    rdfs:label "Reconhecimento do Sindicato de Datilógrafas e Taquígrafas"@pt ;
+    dc:source "Hemeroteca Digital - Jornal O Radical, 03/06/1933" ;
+    dc:date "1933-06-03"^^xsd:date ;
+    schema:url <https://memoria.bn.gov.br/docreader/DocReader.aspx?bib=830399&pagfis=3734> ;
+    crm:P129_is_about data:event_fundacao-sindicato, data:org_sindicato-datilografas, 
+                      data:person_almerinda-farias-gama, data:concept_pioneirismo-politico-negro-feminino ;
+    dc:rights "Material em domínio público ou com direitos de autor respeitados."@pt .
+
+# Hemeroteca Digital - Votação na Bancada Classista
+data:digitalObject_recorte-votacao-classista
+    rdf:type schema:DigitalDocument , crm:E31_Document ;
+    rdfs:label "Votação na escolha da bancada classista para a Constituinte de 1934"@pt ;
+    dc:source "Hemeroteca Digital - Jornal Diario da Noite, 20/07/1933" ;
+    dc:date "1933-07-20"^^xsd:date ;
+    schema:url <https://memoria.bn.gov.br/docreader/DocReader.aspx?bib=221961_01&pagfis=14944> ;
+    crm:P129_is_about data:event_votacao-constituinte-1933, data:person_almerinda-farias-gama,
+                      data:concept_barreiras-de-genero-e-raca ;
+    dc:rights "Material em domínio público ou com direitos de autor respeitados."@pt ;
+    rdfs:comment "Documento que registra o ato histórico onde Almerinda foi 'a única representante feminina — e, notavelmente, uma mulher negra — presente'."@pt .
+
+# Hemeroteca Digital - Pioneiras do Feminismo
+data:digitalObject_recorte-pioneiras-feminismo
+    rdf:type schema:DigitalDocument , crm:E31_Document ;
+    rdfs:label "Artigo sobre as pioneiras do feminismo no Brasil"@pt ;
+    dc:source "Hemeroteca Digital - Jornal Walkyrias, agosto de 1934" ;
+    dc:date "1934-08"^^xsd:gYearMonth ;
+    schema:url <https://memoria.bn.gov.br/docreader/DocReader.aspx?bib=337234&pagfis=43> ;
+    crm:P129_is_about data:concept_pioneirismo-politico, data:concept_feminismo-negro,
+                      data:person_almerinda-farias-gama, data:person_bertha-lutz, data:person_carmen-portinho ;
+    dc:rights "Material em domínio público ou com direitos de autor respeitados."@pt .
+	
+	
+# ==========================================================================================
+# ESTRUTURA GERAL DA NARRATIVA (USANDO NARRATIVE ONTOLOGY)
+# ==========================================================================================
+# ENRIQUECIMENTO: Narrativa como "artefato epistêmico primário da pesquisa"
+# conforme discutido na fundamentação teórica
+
+# A narrativa completa sobre Almerinda - ENRIQUECIDA
+data:narrative_almerinda
+    rdf:type nont:Biography ;
+    rdfs:label "Biografia de Almerinda Farias Gama"@pt ;
+    nont:hasText data:narration_almerinda_texto ;
+    nont:hasFabula data:fabula_vida-de-almerinda ;
+    # ENRIQUECIMENTO: Conectando a narrativa aos conceitos interseccionais centrais
+    dc:subject data:concept_feminismo-negro, data:concept_pioneirismo-politico-negro-feminino ;
+    rdfs:comment "Narrativa construída como produto epistêmico da pesquisa, utilizando a identidade interseccional de Almerinda como lente interpretativa central, conforme metodologia de curadoria digital socializada."@pt .
+
+# O texto da narração - ENRIQUECIDO
+data:narration_almerinda_texto
+    rdf:type nont:Narration, crm:E33_Linguistic_Object ;
+    rdfs:label "Texto da narração sobre Almerinda Farias Gama"@pt ;
+    crm:P190_has_symbolic_content """A trajetória política de luta de Almerinda Farias Gama — advogada, sindicalista e uma das primeiras mulheres negras a ocupar espaços institucionais de destaque na política brasileira — intensificou-se strategicamente em 1929, quando migrou de Alagoas para o Rio de Janeiro. Em um Brasil recém-emergido do sistema escravista, onde os espaços de poder político eram estruturalmente restritos através de barreiras interseccionais de gênero e raça, sua filiação à Federação Brasileira pelo Progresso Feminino (FBPM), liderada por Bertha Lutz, constituiu um ato de relevância política excepcional. Neste contexto, ela não apenas engajou-se na luta pela emancipação feminina, mas introduziu criticamente no movimento majoritariamente branco a perspectiva específica da mulher negra e trabalhadora, conceptualizando o sufrágio como "arma" estratégica fundamental contra as estruturas opressivas do sexismo e do racismo. Sua atuação política caracterizou-se pela multiplicidade de frentes de ação. Como pioneira do feminismo interseccional, sua participação no II Congresso Internacional Feminista em 1931 transcendeu o papel de congressista convencional, constituindo-se como voz representativa de uma parcela estruturalmente invisibilizada da população feminina brasileira. Paralelamente, sua liderança sindical como primeira presidente do Sindicato dos Datilógrafas e Taquígrafas operou como plataforma institucional para uma luta interseccional articulada, que abrangia simultaneamente a "independência econômica da mulher" e o combate sistemático à desigualdade salarial que historicamente penalizava com maior intensidade as mulheres negras trabalhadoras. O momento histórico mais emblemático de seu pioneirismo político materializou-se em 20 de julho de 1933. Indicada como delegada sindical, Almerinda exerceu o voto na escolha da bancada classista para a Assembleia Nacional Constituinte de 1934. Neste ato histórico de significância excepcional, ela constituiu-se como única representante feminina — e, particularmente, uma mulher negra — presente no processo decisório, rompendo simultaneamente barreiras estruturais de gênero e raça através de um único gesto político. Sua candidatura em 1934, embora eleitoralmente não vitoriosa, consolidou definitivamente este legado transformador, reforçando sua posição como figura seminal na historiografia da participação política negra e feminina no Brasil."""@pt ;
+    # ENRIQUECIMENTO: Metadados sobre a construção da narração
+    dc:creator "Sarah Rúbia de Oliveira Santos"@pt ;
+    dc:description "Texto construído através de análise curatorial especializada, transcendendo descrição factual para capturar agência interseccional."@pt ;
+    rdfs:comment "Narração que opera mediação hermenêutica entre eventos para produzir significado histórico, utilizando identidade interseccional como lente interpretativa."@pt .
+
+# A sequência cronológica de eventos (a Fábula)
+data:fabula_vida-de-almerinda
+    rdf:type nont:Fabula ;
+    rdfs:label "Fábula da trajetória de Almerinda Farias Gama"@pt ;
+    crm:P9_consists_of # Lista os eventos em ordem cronológica
+        data:event_nascimento-almerinda-1899 ,
+        data:event_mudanca-rio-1929 ,
+        data:event_filiacao-fbpm ,
+        data:event_congresso-feminista-1931 ,
+        data:event_fundacao-sindicato ,
+        data:event_almerinda-presidente-sindicato ,
+        data:event_votacao-constituinte-1933 ,
+        data:event_candidatura-1934 ,
+        data:event_morte-almerinda-1999 ;
+    rdfs:comment "Sequência cronológica objetiva de eventos desprovida de interpretações discursivas, representando a matéria-prima factual da história."@pt .
+
+# ============================================================================
+# MODELAGEM DOS EVENTOS DA NARRAÇÃO
+# ============================================================================
+# ENRIQUECIMENTO: Cada evento modelado com verbos de agência, motivações e consequências
+
+data:event_nascimento-almerinda-1899
+    rdf:type crm:E67_Birth, nont:Event;
+    rdfs:label "Nascimento de Almerinda Farias Gama em 1899"@pt ;
+    nont:partOfNarrative data:narrative_almerinda ;
+    crm:P98_brought_into_life data:person_almerinda-farias-gama ;
+    crm:P7_took_place_at data:place_alagoas ;
+    crm:P4_has_time-span [
+        rdf:type crm:E52_Time-Span ;
+        crm:P82_at_some_time_within "1899"^^xsd:gYear
+    ] ;
+    rdfs:comment "Evento inicial da fábula, situando o nascimento no contexto pós-abolição brasileiro."@pt .
+
+data:event_morte-almerinda-1999
+    rdf:type crm:E69_Death, nont:Event;
+    rdfs:label "Morte de Almerinda Farias Gama em 1999"@pt ;
+    nont:partOfNarrative data:narrative_almerinda ;
+    crm:P100_was_death_of data:person_almerinda-farias-gama ;
+    crm:P7_took_place_at data:place_sao-paulo-city ;
+    crm:P4_has_time-span [
+        rdf:type crm:E52_Time-Span ;
+        crm:P82_at_some_time_within "1999"^^xsd:gYear
     ] .
 
-# Conceitos principais
-ex:MainConcept a owl:Class ;
-    rdfs:label "Conceito Principal"@pt ;
-    rdfs:comment "Conceito central do grafo de conhecimento apresentado"@pt ;
-    dc:creator "Pesquisador" ;
-    owl:sameAs dbr:Main_Concept ;
-    schema:url <https://sarahrubia.github.io/narrativa-almerinda/concept/main> .
+# EVENTO ESTRATÉGICO 1: Migração para o Rio de Janeiro
+data:event_mudanca-rio-1929
+    rdf:type crm:E9_Move, nont:Event ;
+    nont:partOfNarrative data:narrative_almerinda ;
+    rdfs:label "Migração estratégica de Almerinda para o Rio de Janeiro"@pt ;
+    nont:hasDescription "Evento que intensificou estrategicamente a trajetória política de luta de Almerinda."@pt ;
+    crm:P14_carried_out_by data:person_almerinda-farias-gama ;
+    crm:P27_moved_from data:place_alagoas ;
+    crm:P26_moved_to data:place_rio-de-janeiro-city ;
+    crm:P4_has_time-span [ crm:P82_at_some_time_within "1929"^^xsd:gYear ] ;
+    # ENRIQUECIMENTO: Motivações explícitas da migração conforme discussão
+    data:foiMotivadaPor data:concept_desigualdade-salarial, data:concept_busca-oportunidades-profissionais ;
+    crm:P21_had_general_purpose data:concept_intensificacao-luta-politica ;
+    rdfs:comment "Migração modelada como ato intencional estratégico, não como simples deslocamento geográfico, capturando a agência política da decisão."@pt .
 
-ex:RelatedConcept a owl:Class ;
-    rdfs:label "Conceito Relacionado"@pt ;
-    rdfs:comment "Conceito secundário com relações importantes"@pt ;
-    owl:sameAs dbr:Related_Concept ;
-    schema:url <https://sarahrubia.github.io/narrativa-almerinda/concept/related> .
+# CONCEITOS CRIADOS PARA A MIGRAÇÃO
+data:concept_busca-oportunidades-profissionais
+    rdf:type skos:Concept ;
+    skos:prefLabel "Busca por oportunidades profissionais"@pt ;
+    skos:broader data:concept_emancipacao-feminina ;
+    rdfs:comment "Conceito criado para capturar motivação específica da migração de mulheres profissionais no contexto pós-abolição."@pt .
 
-ex:SubConcept a owl:Class ;
-    rdfs:label "Subconceito"@pt ;
-    rdfs:subClassOf ex:MainConcept ;
-    owl:sameAs dbr:Sub_Concept ;
-    schema:url <https://sarahrubia.github.io/narrativa-almerinda/concept/sub> .
+data:concept_intensificacao-luta-politica
+    rdf:type skos:Concept ;
+    skos:prefLabel "Intensificação da luta política"@pt ;
+    skos:broader data:concept_pioneirismo-politico ;
+    rdfs:comment "Conceito para representar o propósito estratégico da migração na trajetória de ativismo."@pt .
 
-# Instâncias
-ex:instance1 a ex:MainConcept, schema:Thing ;
-    rdfs:label "Instância 1"@pt ;
-    ex:hasProperty "Valor da Propriedade 1" ;
-    ex:relatedTo ex:instance2 ;
-    owl:sameAs dbr:Instance_1 ;
-    owl:sameAs wd:Q123456 ;
-    schema:url <https://sarahrubia.github.io/narrativa-almerinda/instance/1> .
+# EVENTO ESTRATÉGICO 2: Filiação à FBPM
+data:event_filiacao-fbpm
+    rdf:type crm:E85_Joining, nont:Event ;
+    nont:partOfNarrative data:narrative_almerinda ;
+    rdfs:label "Filiação transformadora à FBPM"@pt ;
+    nont:causallyDependsOn data:event_mudanca-rio-1929 ;
+    crm:P144_joined_with data:org_fbpm ;
+    crm:P4_has_time-span [
+        rdf:type crm:E52_Time-Span ;
+        rdfs:label "Período pós-1929"@pt
+    ] ;
+    # ENRIQUECIMENTO: Qualificação da participação através de nont:ActorWithRole
+    nont:hadParticipant [
+        rdf:type nont:ActorWithRole ;
+        nont:hasSubject data:person_almerinda-farias-gama ;
+        nont:hasRole [ rdf:type nont:Role ; rdfs:label "Agente introdutora da perspectiva da mulher negra trabalhadora"@pt ]
+    ] ;
+    # ENRIQUECIMENTO: Verbos de agência específicos conforme discussão
+    data:introduziu data:concept_perspectiva-mulher-negra-trabalhadora ;
+    data:trouxe data:concept_visao-interseccional-para-movimento-branco ;
+    data:foiMotivadaPor data:concept_emancipacao-feminina ;
+    # ENRIQUECIMENTO: Propósito e consequência da ação
+    crm:P21_had_general_purpose data:concept_ampliacao-perspectiva-feminista ;
+    crm:P17_was_motivated_by data:concept_necessidade-representacao-interseccional ;
+    rdfs:comment "Filiação modelada como ato transformador que introduz perspectiva interseccional no movimento feminista majoritariamente branco, demonstrando agência de mudança estrutural."@pt .
 
-ex:instance2 a ex:RelatedConcept, schema:Thing ;
-    rdfs:label "Instância 2"@pt ;
-    ex:hasProperty "Valor da Propriedade 2" ;
-    ex:connectedTo ex:instance3 ;
-    owl:sameAs dbr:Instance_2 ;
-    owl:sameAs wd:Q789012 ;
-    schema:url <https://sarahrubia.github.io/narrativa-almerinda/instance/2> .
+# CONCEITOS INTERSECCIONAIS CRIADOS
+data:concept_perspectiva-mulher-negra-trabalhadora
+    rdf:type skos:Concept ;
+    skos:prefLabel "Perspectiva da mulher negra trabalhadora"@pt ;
+    skos:broader data:concept_feminismo-negro ;
+    skos:narrower data:concept_interseccionalidade-genero-raca-classe ;
+    rdfs:comment "Conceito específico introduzido por Almerinda no movimento feminista, articulando simultaneamente gênero, raça e classe no contexto brasileiro pós-abolição."@pt .
 
-ex:instance3 a ex:SubConcept, schema:Thing ;
-    rdfs:label "Instância 3"@pt ;
-    ex:hasProperty "Valor da Propriedade 3" ;
-    owl:sameAs dbr:Instance_3 ;
-    owl:sameAs wd:Q345678 ;
-    schema:url <https://sarahrubia.github.io/narrativa-almerinda/instance/3> .
+data:concept_visao-interseccional-para-movimento-branco
+    rdf:type skos:Concept ;
+    skos:prefLabel "Introdução de visão interseccional em movimento majoritariamente branco"@pt ;
+    skos:broader data:concept_transformacao-movimento-feminista ;
+    rdfs:comment "Conceito para capturar o impacto transformador da participação de Almerinda na FBPM."@pt .
 
-# Propriedades
-ex:hasProperty a owl:DatatypeProperty ;
-    rdfs:label "tem propriedade"@pt ;
-    rdfs:domain ex:MainConcept ;
-    rdfs:range rdfs:Literal .
+data:concept_ampliacao-perspectiva-feminista
+    rdf:type skos:Concept ;
+    skos:prefLabel "Ampliação da perspectiva feminista"@pt ;
+    skos:broader data:concept_evolucao-movimento-feminista ;
+    rdfs:comment "Objetivo estratégico da filiação de Almerinda à FBPM."@pt .
 
-ex:relatedTo a owl:ObjectProperty ;
-    rdfs:label "relacionado com"@pt ;
-    rdfs:domain ex:MainConcept ;
-    rdfs:range ex:RelatedConcept .
+data:concept_necessidade-representacao-interseccional
+    rdf:type skos:Concept ;
+    skos:prefLabel "Necessidade de representação interseccional"@pt ;
+    skos:broader data:concept_lacuna-representativa ;
+    rdfs:comment "Motivação política identificada para a participação de mulheres negras em movimentos feministas."@pt .
 
-ex:connectedTo a owl:ObjectProperty ;
-    rdfs:label "conectado com"@pt ;
-    rdfs:domain ex:RelatedConcept ;
-    rdfs:range ex:SubConcept .
+# EVENTO ESTRATÉGICO 3: II Congresso Feminista
+data:event_congresso-feminista-1931
+    rdf:type crm:E7_Activity, nont:Event ;
+    nont:partOfNarrative data:narrative_almerinda ;
+    rdfs:label "Participação no II Congresso Internacional Feminista"@pt ;
+    crm:P7_took_place_at data:place_rio-de-janeiro-city ;
+    crm:P4_has_time-span [
+        rdf:type crm:E52_Time-Span ;
+        crm:P82_at_some_time_within "1931-06"^^xsd:gYearMonth
+    ] ;
+    # ENRIQUECIMENTO: Qualificação específica da participação
+    nont:hadParticipant [
+        rdf:type nont:ActorWithRole ;
+        nont:hasSubject data:person_almerinda-farias-gama ;
+        nont:hasRole [ rdf:type nont:Role ; rdfs:label "Voz representante da população feminina invisibilizada"@pt ]
+    ] ;
+    # ENRIQUECIMENTO: Verbos de agência específicos para a ação
+    data:representou data:concept_populacao-feminina-invisibilizada ;
+    data:transcendeu data:concept_papel-congressista-convencional ;
+    data:constituiuSeComo data:concept_voz-representativa-marginalizada ;
+    crm:P21_had_general_purpose data:concept_representacao-interseccional-congresso ;
+    rdfs:comment "Participação qualificada que transcende presença factual, constituindo-se como representação de parcela estruturalmente invisibilizada, conforme padrão nont:ActorWithRole."@pt .
 
-ex:KnowledgeGraph a owl:Ontology, void:Dataset ;
-    rdfs:label "Grafo de Conhecimento - Apresentação Científica"@pt ;
-    dc:title "Grafo de Conhecimento para Evento Científico" ;
-    dc:description "Representação semântica dos conceitos e relacionamentos identificados na pesquisa" ;
-    dc:creator "Nome do Pesquisador" ;
-    dc:date "2024" ;
-    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-    schema:url <https://sarahrubia.github.io/narrativa-almerinda/> ;
-    void:sparqlEndpoint <https://sarahrubia.github.io/narrativa-almerinda/sparql> .
+# CONCEITOS ESPECÍFICOS PARA O CONGRESSO
+data:concept_populacao-feminina-invisibilizada
+    rdf:type skos:Concept ;
+    skos:prefLabel "População feminina invisibilizada"@pt ;
+    skos:broader data:concept_grupos-marginalizados ;
+    rdfs:comment "Parcela da população feminina representada por Almerinda no congresso, especialmente mulheres negras e trabalhadoras."@pt .
+
+data:concept_papel-congressista-convencional
+    rdf:type skos:Concept ;
+    skos:prefLabel "Papel de congressista convencional"@pt ;
+    rdfs:comment "Papel padrão transcendido por Almerinda através de sua representação interseccional."@pt .
+
+data:concept_voz-representativa-marginalizada
+    rdf:type skos:Concept ;
+    skos:prefLabel "Voz representativa de grupos marginalizados"@pt ;
+    skos:broader data:concept_representacao-politica ;
+    rdfs:comment "Função política específica assumida por Almerinda no contexto congressual."@pt .
+
+data:concept_representacao-interseccional-congresso
+    rdf:type skos:Concept ;
+    skos:prefLabel "Representação interseccional no congresso"@pt ;
+    skos:broader data:concept_participacao-politica-qualificada ;
+    rdfs:comment "Objetivo específico da participação de Almerinda no II Congresso Internacional Feminista."@pt .
+
+# EVENTO ESTRATÉGICO 4: Fundação do Sindicato
+data:event_fundacao-sindicato
+    rdf:type crm:E66_Formation, nont:Event;
+    rdfs:label "Fundação do Sindicato dos Datilógrafas e Taquígrafas"@pt ;
+    nont:partOfNarrative data:narrative_almerinda;
+    crm:P14_carried_out_by data:person_almerinda-farias-gama;
+    crm:P95_has_formed data:org_sindicato-datilografas;
+    # ENRIQUECIMENTO: Motivação e propósito da fundação
+    data:foiMotivadaPor data:concept_necessidade-organizacao-trabalhadora ;
+    crm:P21_had_general_purpose data:concept_plataforma-luta-interseccional ;
+    rdfs:comment "Fundação como ato de criação institucional para luta interseccional, estabelecendo plataforma organizativa específica."@pt .
+
+# CONCEITOS PARA AÇÃO SINDICAL
+data:concept_necessidade-organizacao-trabalhadora
+    rdf:type skos:Concept ;
+    skos:prefLabel "Necessidade de organização trabalhadora feminina"@pt ;
+    skos:broader data:concept_direitos-trabalhadoras ;
+    rdfs:comment "Motivação específica para criação de organizações sindicais femininas."@pt .
+
+data:concept_plataforma-luta-interseccional
+    rdf:type skos:Concept ;
+    skos:prefLabel "Plataforma para luta interseccional"@pt ;
+    skos:broader data:concept_estrategias-organizativas ;
+    rdfs:comment "Objetivo da fundação sindical como base institucional para articular gênero, raça e classe."@pt .
+
+# EVENTO ESTRATÉGICO 5: Presidência Sindical
+data:event_almerinda-presidente-sindicato
+    rdf:type crm:E7_Activity, nont:Event;
+    rdfs:label "Liderança sindical de Almerinda como primeira presidente"@pt ;
+    nont:partOfNarrative data:narrative_almerinda;
+    crm:P14_carried_out_by data:person_almerinda-farias-gama;
+    # ENRIQUECIMENTO: Qualificação da liderança
+    nont:hadParticipant [
+        rdf:type nont:ActorWithRole ;
+        nont:hasSubject data:person_almerinda-farias-gama ;
+        nont:hasRole [ rdf:type nont:Role ; rdfs:label "Primeira presidente mulher negra de sindicato no Brasil"@pt ]
+    ] ;
+    # ENRIQUECIMENTO: Verbos de agência para a liderança
+    data:presidiu data:org_sindicato-datilografas;
+    data:operouComo data:concept_plataforma-institucional-interseccional ;
+    data:combateu data:concept_desigualdade-salarial ;
+    data:promoveu data:concept_independencia-economica ;
+    # ENRIQUECIMENTO: Propósitos múltiplos da liderança
+    crm:P21_had_general_purpose data:concept_independencia-economica, 
+                                 data:concept_direitos-trabalhadoras,
+                                 data:concept_combate-discriminacao-interseccional ;
+    rdfs:comment "Liderança sindical modelada como plataforma institucional para luta interseccional articulada, transcendendo função administrativa."@pt .
+
+# CONCEITOS PARA LIDERANÇA SINDICAL - ENRIQUECIMENTO
+data:concept_plataforma-institucional-interseccional
+    rdf:type skos:Concept ;
+    skos:prefLabel "Plataforma institucional para luta interseccional"@pt ;
+    skos:broader data:concept_estrategias-organizativas ;
+    rdfs:comment "Função da liderança sindical como base para articulação de múltiplas dimensões de opressão."@pt .
+
+data:concept_combate-discriminacao-interseccional
+    rdf:type skos:Concept ;
+    skos:prefLabel "Combate à discriminação interseccional"@pt ;
+    skos:broader data:concept_luta-antidiscriminacao ;
+    rdfs:comment "Objetivo específico da liderança sindical que abrange simultaneamente gênero, raça e classe."@pt .
+
+# EVENTO HISTÓRICO CRUCIAL: Votação na Constituinte
+data:event_votacao-constituinte-1933
+    rdf:type crm:E7_Activity, nont:Event ;
+    nont:partOfNarrative data:narrative_almerinda ;
+    rdfs:label "Ato histórico de votação na bancada classista da Constituinte"@pt ;
+    nont:hasDescription "Momento histórico mais emblemático onde Almerinda foi a única representante feminina — e mulher negra — presente no processo decisório."@pt ;
+    crm:P7_took_place_at data:place_rio-de-janeiro-city ;
+    crm:P4_has_time-span [
+        rdf:type crm:E52_Time-Span ;
+        crm:P82_at_some_time_within "1933-07-20"^^xsd:date
+    ] ;
+    # ENRIQUECIMENTO: Qualificação específica do papel histórico
+    nont:hadParticipant [
+        rdf:type nont:ActorWithRole ;
+        nont:hasSubject data:person_almerinda-farias-gama ;
+        nont:hasRole data:role_delegada-sindical
+    ];
+    # ENRIQUECIMENTO: Verbos de agência para as consequências históricas
+    data:rompeu data:concept_barreiras-de-genero-e-raca ;
+    data:constituiuSeComo data:concept_unica-representante-feminina-negra ;
+    data:materializou data:concept_pioneirismo-politico-negro-feminino ;
+    data:exerceu data:concept_voto-historico-transformador ;
+    # ENRIQUECIMENTO: Propósito e significado histórico
+    crm:P20_had_specific_purpose data:concept_escolha-bancada-classista ;
+    crm:P21_had_general_purpose data:concept_ruptura-barreiras-estruturais ;
+    crm:P67_refers_to data:org_anc-1934 ;
+    rdfs:comment "Ato político de significância excepcional modelado através de múltiplos verbos de agência para capturar seu impacto transformador na história política brasileira."@pt .
+
+# CONCEITOS ESPECÍFICOS PARA O ATO HISTÓRICO: Votação na Constituinte
+data:concept_unica-representante-feminina-negra
+    rdf:type skos:Concept ;
+    skos:prefLabel "Única representante feminina negra em processo político decisório"@pt ;
+    skos:broader data:concept_pioneirismo-politico-negro-feminino ;
+    rdfs:comment "Status histórico específico de Almerinda na votação da bancada classista."@pt .
+
+data:concept_voto-historico-transformador
+    rdf:type skos:Concept ;
+    skos:prefLabel "Voto histórico transformador"@pt ;
+    skos:broader data:concept_atos-politicos-pioneiros ;
+    rdfs:comment "Caracterização do voto de Almerinda como ato de transformação histórica."@pt .
+
+data:concept_escolha-bancada-classista
+    rdf:type skos:Concept ;
+    skos:prefLabel "Escolha da bancada classista para Constituinte"@pt ;
+    skos:broader data:concept_processos-constituintes ;
+    rdfs:comment "Processo político específico no qual Almerinda exerceu papel histórico."@pt .
+
+data:concept_ruptura-barreiras-estruturais
+    rdf:type skos:Concept ;
+    skos:prefLabel "Ruptura de barreiras estruturais"@pt ;
+    skos:broader data:concept_transformacao-social ;
+    rdfs:comment "Objetivo e consequência do ato político de Almerinda na votação de 1933."@pt .
+
+# EVENTO FINAL: Candidatura 1934 
+data:event_candidatura-1934
+    rdf:type crm:E7_Activity, nont:Event ;
+    nont:partOfNarrative data:narrative_almerinda ;
+    rdfs:label "Candidatura política pioneira de 1934"@pt ;
+    crm:P14_carried_out_by data:person_almerinda-farias-gama ;
+    nont:causallyDependsOn data:event_votacao-constituinte-1933 ;
+    crm:P4_has_time-span [
+        rdf:type crm:E52_Time-Span ;
+        crm:P82_at_some_time_within "1934"^^xsd:gYear
+    ] ;
+    # ENRIQUECIMENTO: Verbos de agência para a consolidação do legado
+    data:consolidou data:concept_legado-transformador ;
+    data:reforçou data:concept_posicao-seminal-historia-politica ;
+    data:estabeleceu data:concept_precedente-candidatura-negra-feminina ;
+    # ENRIQUECIMENTO: Propósito histórico da candidatura
+    crm:P21_had_general_purpose data:concept_consolidacao-participacao-politica-negra-feminina ;
+    # ENRIQUECIMENTO: Resultado e impacto
+    nont:hadResult [
+        rdf:type nont:Outcome ;
+        rdfs:label "Não eleita mas legado consolidado"@pt ;
+        rdfs:comment "Embora eleitoralmente não vitoriosa, consolidou legado histórico transformador"@pt
+    ] ;
+    rdfs:comment "Candidatura modelada como ato de consolidação histórica, transcendendo resultado eleitoral para estabelecer precedente transformador."@pt .
+
+# CONCEITOS PARA CONSOLIDAÇÃO DO LEGADO: Candidatura 1934
+data:concept_legado-transformador
+    rdf:type skos:Concept ;
+    skos:prefLabel "Legado político transformador"@pt ;
+    skos:broader data:concept_impacto-historico ;
+    rdfs:comment "Legado duradouro estabelecido pela trajetória política de Almerinda."@pt .
+
+data:concept_posicao-seminal-historia-politica
+    rdf:type skos:Concept ;
+    skos:prefLabel "Posição seminal na história política brasileira"@pt ;
+    skos:broader data:concept_pioneirismo-historico ;
+    rdfs:comment "Status histórico de Almerinda como figura fundacional da participação política negra e feminina."@pt .
+
+data:concept_precedente-candidatura-negra-feminina
+    rdf:type skos:Concept ;
+    skos:prefLabel "Precedente para candidaturas de mulheres negras"@pt ;
+    skos:broader data:concept_marcos-historicos ;
+    rdfs:comment "Impacto específico da candidatura de Almerinda para futuras participações políticas."@pt .
+
+data:concept_consolidacao-participacao-politica-negra-feminina
+    rdf:type skos:Concept ;
+    skos:prefLabel "Consolidação da participação política negra e feminina"@pt ;
+    skos:broader data:concept_objetivos-politicos-historicos ;
+    rdfs:comment "Objetivo estratégico central da candidatura de Almerinda em 1934."@pt .
+
+# ============================================================================
+# VERBOS DE AGÊNCIA ADICIONAIS CRIADOS DURANTE O ENRIQUECIMENTO
+# ============================================================================
+# ENRIQUECIMENTO: Novos verbos especializados identificados na análise
+
+data:trouxe rdf:type owl:ObjectProperty ;
+    rdfs:label "trouxe"@pt ;
+    rdfs:comment "Verbo de agência para ações de introdução e incorporação de elementos novos."@pt .
+
+data:transcendeu rdf:type owl:ObjectProperty ;
+    rdfs:label "transcendeu"@pt ;
+    rdfs:comment "Verbo para ações que superam limitações ou padrões estabelecidos."@pt .
+
+data:constituiuSeComo rdf:type owl:ObjectProperty ;
+    rdfs:label "constituiu-se como"@pt ;
+    rdfs:comment "Verbo para transformação identitária ou assumir novos papéis."@pt .
+
+data:operouComo rdf:type owl:ObjectProperty ;
+    rdfs:label "operou como"@pt ;
+    rdfs:comment "Verbo para descrever funcionamento ou atuação em contextos específicos."@pt .
+
+data:materializou rdf:type owl:ObjectProperty ;
+    rdfs:label "materializou"@pt ;
+    rdfs:comment "Verbo para ações que tornam conceitos abstratos em realidade concreta."@pt .
+	
+	data:promoveu rdf:type owl:ObjectProperty ;
+    rdfs:label "promoveu"@pt ;
+    rdfs:comment "Verbo de agência para ações de incentivo e desenvolvimento de conceitos ou práticas."@pt .
+
+data:exerceu rdf:type owl:ObjectProperty ;
+    rdfs:label "exerceu"@pt ;
+    rdfs:comment "Verbo para o desempenho ativo de funções, direitos ou poderes específicos."@pt .
+
+data:estabeleceu rdf:type owl:ObjectProperty ;
+    rdfs:label "estabeleceu"@pt ;
+    rdfs:comment "Verbo para ações que criam bases, fundamentos ou precedentes duradouros."@pt .
+
+data:reforçou rdf:type owl:ObjectProperty ;
+    rdfs:label "reforçou"@pt ;
+    rdfs:comment "Verbo para ações que fortalecem ou consolidam posições, conceitos ou legados existentes."@pt .
+
+data:consolidou rdf:type owl:ObjectProperty ;
+    rdfs:label "consolidou"@pt ;
+    rdfs:subPropertyOf crm:P15_was_influenced_by ;
+    rdfs:comment "Verbo especializado para ações que estabelecem legados duradouros e transformações históricas permanentes, criando cadeias de influência temporal."@pt .
+
+# ============================================================================
+# CONCEITOS HIERÁRQUICOS ORGANIZADOS - ENRIQUECIMENTO ESTRUTURAL
+# ============================================================================
+# ENRIQUECIMENTO: Organização hierárquica dos conceitos criados para melhor navegação semântica
+
+# Conceitos de nível superior - Categorias gerais
+data:concept_transformacao-social
+    rdf:type skos:Concept ;
+    skos:prefLabel "Transformação social"@pt ;
+    skos:topConceptOf data: ;
+    rdfs:comment "Conceito de nível superior para processos de mudança estrutural na sociedade."@pt .
+
+data:concept_estrategias-organizativas
+    rdf:type skos:Concept ;
+    skos:prefLabel "Estratégias organizativas"@pt ;
+    skos:topConceptOf data: ;
+    rdfs:comment "Conceito de nível superior para métodos e abordagens de organização política."@pt .
+
+data:concept_impacto-historico
+    rdf:type skos:Concept ;
+    skos:prefLabel "Impacto histórico"@pt ;
+    skos:topConceptOf data: ;
+    rdfs:comment "Conceito de nível superior para consequências duradouras de ações históricas."@pt .
+
+data:concept_marcos-historicos
+    rdf:type skos:Concept ;
+    skos:prefLabel "Marcos históricos"@pt ;
+    skos:topConceptOf data: ;
+    skos:broader data:concept_impacto-historico ;
+    rdfs:comment "Eventos ou ações de significado histórico excepcional."@pt .
+
+data:concept_pioneirismo-historico
+    rdf:type skos:Concept ;
+    skos:prefLabel "Pioneirismo histórico"@pt ;
+    skos:broader data:concept_marcos-historicos ;
+    rdfs:comment "Ações ou posições que estabelecem precedentes históricos."@pt .
+
+# Conceitos específicos para interseccionalidade
+data:concept_interseccionalidade-genero-raca-classe
+    rdf:type skos:Concept ;
+    skos:prefLabel "Interseccionalidade gênero-raça-classe"@pt ;
+    skos:broader data:concept_feminismo-negro ;
+    skos:narrower data:concept_perspectiva-mulher-negra-trabalhadora ;
+    rdfs:comment "Conceito específico para a articulação simultânea das três dimensões identitárias centrais na trajetória de Almerinda."@pt .
+
+data:concept_grupos-marginalizados
+    rdf:type skos:Concept ;
+    skos:prefLabel "Grupos marginalizados"@pt ;
+    skos:topConceptOf data: ;
+    rdfs:comment "Conceito para populações estruturalmente excluídas dos espaços de poder."@pt .
+
+data:concept_lacuna-representativa
+    rdf:type skos:Concept ;
+    skos:prefLabel "Lacuna representativa"@pt ;
+    skos:broader data:concept_grupos-marginalizados ;
+    rdfs:comment "Ausência de representação adequada de grupos específicos em espaços políticos."@pt .
+
+# Conceitos para evolução do movimento feminista
+data:concept_evolucao-movimento-feminista
+    rdf:type skos:Concept ;
+    skos:prefLabel "Evolução do movimento feminista"@pt ;
+    skos:broader data:concept_transformacao-social ;
+    rdfs:comment "Processos de desenvolvimento e ampliação do movimento feminista brasileiro."@pt .
+
+data:concept_transformacao-movimento-feminista
+    rdf:type skos:Concept ;
+    skos:prefLabel "Transformação do movimento feminista"@pt ;
+    skos:broader data:concept_evolucao-movimento-feminista ;
+    rdfs:comment "Mudanças estruturais no movimento feminista através da incorporação de perspectivas interseccionais."@pt .
+
+# Conceitos para processos políticos
+data:concept_processos-constituintes
+    rdf:type skos:Concept ;
+    skos:prefLabel "Processos constituintes"@pt ;
+    skos:topConceptOf data: ;
+    rdfs:comment "Processos de elaboração e definição de estruturas político-legais fundamentais."@pt .
+
+data:concept_atos-politicos-pioneiros
+    rdf:type skos:Concept ;
+    skos:prefLabel "Atos políticos pioneiros"@pt ;
+    skos:broader data:concept_pioneirismo-historico ;
+    rdfs:comment "Ações políticas que estabelecem precedentes na participação de grupos marginalizados."@pt .
+
+data:concept_participacao-politica-qualificada
+    rdf:type skos:Concept ;
+    skos:prefLabel "Participação política qualificada"@pt ;
+    skos:broader data:concept_estrategias-organizativas ;
+    rdfs:comment "Formas especializadas de participação que transcendem presença factual."@pt .
+
+data:concept_representacao-politica
+    rdf:type skos:Concept ;
+    skos:prefLabel "Representação política"@pt ;
+    skos:broader data:concept_participacao-politica-qualificada ;
+    rdfs:comment "Ação de dar voz política a grupos ou perspectivas específicas."@pt .
+
+# Conceitos para objetivos políticos
+data:concept_objetivos-politicos-historicos
+    rdf:type skos:Concept ;
+    skos:prefLabel "Objetivos políticos históricos"@pt ;
+    skos:broader data:concept_estrategias-organizativas ;
+    rdfs:comment "Metas de longo prazo que orientam ações políticas transformadoras."@pt .
+
+data:concept_luta-antidiscriminacao
+    rdf:type skos:Concept ;
+    skos:prefLabel "Luta antidiscriminação"@pt ;
+    skos:broader data:concept_objetivos-politicos-historicos ;
+    rdfs:comment "Conjunto de ações destinadas a combater diferentes formas de discriminação estrutural."@pt .
+
+# ============================================================================
+# RELACIONAMENTOS SEMÂNTICOS ENRIQUECIDOS - CONEXÕES ENTRE CONCEITOS
+# ============================================================================
+# ENRIQUECIMENTO: Estabelecimento de relações semânticas complexas entre conceitos
+
+# Relações de interdependência conceitual
+data:concept_feminismo-negro skos:related data:concept_interseccionalidade-genero-raca-classe .
+data:concept_pioneirismo-politico-negro-feminino skos:related data:concept_ruptura-barreiras-estruturais .
+data:concept_desigualdade-salarial skos:related data:concept_combate-discriminacao-interseccional .
+
+# Relações causais entre conceitos
+data:concept_necessidade-representacao-interseccional skos:related data:concept_ampliacao-perspectiva-feminista .
+data:concept_plataforma-luta-interseccional skos:related data:concept_consolidacao-participacao-politica-negra-feminina .
+
+# ============================================================================
+# METADADOS DO GRAFO ENRIQUECIDO - DOCUMENTAÇÃO DA METODOLOGIA
+# ============================================================================
+# ENRIQUECIMENTO: Documentação das estratégias de enriquecimento aplicadas
+
+data: rdfs:comment """Este grafo foi enriquecido através da aplicação sistemática de estratégias de enriquecimento semântico para representação de trajetórias interseccionais. As principais inovações incluem: 1) Criação de vocabulário de agência especializado com verbos que capturam intencionalidade política; 2) Implementação de abordagem facetada através de conceitos interseccionais específicos; 3) Qualificação de participação em eventos através do padrão nont:ActorWithRole; 4) Estabelecimento de motivações e propósitos explícitos para cada ação; 5) Criação de hierarquias conceituais que preservam nuances culturais e históricas. Esta metodologia representa contribuição teórico-prática para representação digital de figuras historicamente marginalizadas."""@pt .
+
+# Metadados sobre o processo de enriquecimento
+data:enrichment_metadata
+    rdf:type owl:Ontology ;
+    rdfs:label "Metodologia de Enriquecimento Semântico para Narrativas Interseccionais"@pt ;
+    dc:creator "Sarah Rúbia de Oliveira Santos" ;
+    dc:date "2025" ;
+    dc:description "Documentação das estratégias aplicadas para superar limitações de vocabulários genéricos na representação de identidades complexas e agência política de figuras subalternizadas."@pt ;
+    owl:versionInfo "Versão enriquecida com vocabulário de agência especializado e conceitos interseccionais específicos"@pt ;
+    rdfs:comment "Este enriquecimento demonstra como ontologias podem transcender aplicação mecânica de padrões para constituir processo hermenêutico de negociação crítica com frameworks existentes."@pt .
