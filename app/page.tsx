@@ -196,7 +196,7 @@ export default function KnowledgeGraphPortfolio() {
                 <div className="flex flex-col items-center space-y-4">
                   <div className="w-full max-w-sm">
                     <img
-                      src="/historical-academic-portrait.png"
+                      src="historical-academic-portrait.png"
                       alt="Figura histórica representada no grafo de conhecimento"
                       className="w-full h-auto rounded-lg shadow-lg border border-gray-200 dark:border-gray-700"
                     />
