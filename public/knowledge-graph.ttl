@@ -1,4 +1,4 @@
-@prefix ex: <https://seuusuario.github.io/seu-repo/> .
+@prefix ex: <https://sarahrubia.github.io/narrativa-almerinda/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -20,7 +20,7 @@ ex:dataset a void:Dataset ;
     dcterms:creator "Nome do Pesquisador" ;
     dcterms:created "2024" ;
     void:feature <http://www.w3.org/ns/formats/Turtle> ;
-    void:dataDump <https://seuusuario.github.io/seu-repo/knowledge-graph.ttl> ;
+    void:dataDump <https://sarahrubia.github.io/narrativa-almerinda/knowledge-graph.ttl> ;
     void:vocabulary foaf:, dc:, owl:, schema: ;
     void:linkset [
         void:target <http://dbpedia.org> ;
@@ -39,19 +39,19 @@ ex:MainConcept a owl:Class ;
     rdfs:comment "Conceito central do grafo de conhecimento apresentado"@pt ;
     dc:creator "Pesquisador" ;
     owl:sameAs dbr:Main_Concept ;
-    schema:url <https://seuusuario.github.io/seu-repo/concept/main> .
+    schema:url <https://sarahrubia.github.io/narrativa-almerinda/concept/main> .
 
 ex:RelatedConcept a owl:Class ;
     rdfs:label "Conceito Relacionado"@pt ;
     rdfs:comment "Conceito secundário com relações importantes"@pt ;
     owl:sameAs dbr:Related_Concept ;
-    schema:url <https://seuusuario.github.io/seu-repo/concept/related> .
+    schema:url <https://sarahrubia.github.io/narrativa-almerinda/concept/related> .
 
 ex:SubConcept a owl:Class ;
     rdfs:label "Subconceito"@pt ;
     rdfs:subClassOf ex:MainConcept ;
     owl:sameAs dbr:Sub_Concept ;
-    schema:url <https://seuusuario.github.io/seu-repo/concept/sub> .
+    schema:url <https://sarahrubia.github.io/narrativa-almerinda/concept/sub> .
 
 # Instâncias
 ex:instance1 a ex:MainConcept, schema:Thing ;
@@ -60,7 +60,7 @@ ex:instance1 a ex:MainConcept, schema:Thing ;
     ex:relatedTo ex:instance2 ;
     owl:sameAs dbr:Instance_1 ;
     owl:sameAs wd:Q123456 ;
-    schema:url <https://seuusuario.github.io/seu-repo/instance/1> .
+    schema:url <https://sarahrubia.github.io/narrativa-almerinda/instance/1> .
 
 ex:instance2 a ex:RelatedConcept, schema:Thing ;
     rdfs:label "Instância 2"@pt ;
@@ -68,14 +68,14 @@ ex:instance2 a ex:RelatedConcept, schema:Thing ;
     ex:connectedTo ex:instance3 ;
     owl:sameAs dbr:Instance_2 ;
     owl:sameAs wd:Q789012 ;
-    schema:url <https://seuusuario.github.io/seu-repo/instance/2> .
+    schema:url <https://sarahrubia.github.io/narrativa-almerinda/instance/2> .
 
 ex:instance3 a ex:SubConcept, schema:Thing ;
     rdfs:label "Instância 3"@pt ;
     ex:hasProperty "Valor da Propriedade 3" ;
     owl:sameAs dbr:Instance_3 ;
     owl:sameAs wd:Q345678 ;
-    schema:url <https://seuusuario.github.io/seu-repo/instance/3> .
+    schema:url <https://sarahrubia.github.io/narrativa-almerinda/instance/3> .
 
 # Propriedades
 ex:hasProperty a owl:DatatypeProperty ;
@@ -100,5 +100,5 @@ ex:KnowledgeGraph a owl:Ontology, void:Dataset ;
     dc:creator "Nome do Pesquisador" ;
     dc:date "2024" ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-    schema:url <https://seuusuario.github.io/seu-repo/> ;
-    void:sparqlEndpoint <https://seuusuario.github.io/seu-repo/sparql> .
+    schema:url <https://sarahrubia.github.io/narrativa-almerinda/> ;
+    void:sparqlEndpoint <https://sarahrubia.github.io/narrativa-almerinda/sparql> .

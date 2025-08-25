@@ -60,7 +60,7 @@ export default function KnowledgeGraphPortfolio() {
                 },
               ],
               "@type": ["Dataset", "CreativeWork"],
-              "@id": "https://seuusuario.github.io/seu-repo/dataset",
+              "@id": "https://sarahrubia.github.io/narrativa-almerinda/dataset",
               name: "Grafo de Conhecimento - Figura Histórica",
               description:
                 "Dataset semântico sobre figura histórica apresentado em evento científico, representando estruturas de conhecimento e relacionamentos identificados durante a pesquisa acadêmica.",
@@ -71,11 +71,11 @@ export default function KnowledgeGraphPortfolio() {
               dateCreated: "2024",
               dateModified: "2024",
               license: "https://creativecommons.org/licenses/by/4.0/",
-              url: "https://seuusuario.github.io/seu-repo/",
+              url: "https://sarahrubia.github.io/narrativa-almerinda/",
               distribution: {
                 "@type": "DataDownload",
                 encodingFormat: "text/turtle",
-                contentUrl: "https://seuusuario.github.io/seu-repo/knowledge-graph.ttl",
+                contentUrl: "https://sarahrubia.github.io/narrativa-almerinda/knowledge-graph.ttl",
               },
               keywords: [
                 "RDF",

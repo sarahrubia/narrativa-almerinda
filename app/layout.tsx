@@ -14,10 +14,10 @@ export const metadata: Metadata = {
     title: "Grafo de Conhecimento - Figura Histórica",
     description: "Dataset semântico e visualização interativa para pesquisa acadêmica",
     type: "website",
-    url: "https://seuusuario.github.io/seu-repo/",
+    url: "https://sarahrubia.github.io/narrativa-almerinda/",
     images: [
       {
-        url: "https://seuusuario.github.io/seu-repo/historical-academic-portrait.png",
+        url: "https://sarahrubia.github.io/narrativa-almerinda/historical-academic-portrait.png",
         width: 800,
         height: 600,
         alt: "Figura histórica representada no grafo de conhecimento",
