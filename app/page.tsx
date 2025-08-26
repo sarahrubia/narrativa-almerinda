@@ -2,7 +2,7 @@
 
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Network, Eye, BookOpen, FileText, Users, Calendar, User, Info } from "lucide-react"
+import { Network, Eye, BookOpen, FileText, GraduationCap, User, Info } from "lucide-react"
 import Head from "next/head"
 import Link from "next/link"
 
@@ -23,7 +23,7 @@ export default function KnowledgeGraphPortfolio() {
       // Show instructions
       setTimeout(() => {
         alert(
-          "A ferramenta de visualização foi aberta em uma nova aba. Cole o conteúdo RDF (Ctrl+V) na caixa de texto para gerar a visualização do grafo.",
+          "A ferramenta de visualização foi aberta em uma nova aba. Se o conteúdo RDF não for carregado, cole o conteúdo RDF (Ctrl+V) na caixa de texto para gerar a visualização do grafo.",
         )
       }, 500)
     } catch (error) {
@@ -60,7 +60,7 @@ export default function KnowledgeGraphPortfolio() {
                 },
               ],
               "@type": ["Dataset", "CreativeWork"],
-              "@id": "https://sarahrubia.github.io/narrativa-almerinda/dataset",
+              "@id": "https://sarahrubia.github.io/narrativa-almerinda/knowledge-graph.ttl",
               name: "Grafo de Conhecimento da Trajetória de Almerinda Farias Gama",
               description:
                 "Dataset semântico sobre figura histórica, representando estruturas de conhecimento e relacionamentos identificados durante a pesquisa acadêmica.",
@@ -89,7 +89,7 @@ export default function KnowledgeGraphPortfolio() {
               inLanguage: "pt-BR",
               about: {
                 "@type": "Thing",
-                name: "Figura Histórica",
+                name: "Almerinda Farias Gama",
                 description: "Análise semântica da trajetória de Almerinda Farias Gama e suas contribuições",
               },
               isPartOf: {
@@ -117,22 +117,22 @@ export default function KnowledgeGraphPortfolio() {
 
           <div className="text-center mb-12">
             <div className="flex items-center justify-center gap-3 mb-6">
-              <Network className="h-12 w-12 text-blue-700" />
+              {/* <Network className="h-12 w-12 text-blue-700" /> */}
               <div>
                 <h1 className="text-5xl font-bold text-gray-900 dark:text-white mb-2">Trajetória de Almerinda Farias Gama</h1>
-                <p className="text-lg text-blue-700 dark:text-blue-400 font-medium">
+                {/* <p className="text-lg text-blue-700 dark:text-blue-400 font-medium">
                   Visualização Interativa
-                </p>
+                </p> */}
               </div>
             </div>
 
             <div className="flex items-center justify-center gap-6 text-sm text-gray-600 dark:text-gray-400 mb-6">
               <div className="flex items-center gap-2">
-                <Users className="h-4 w-4" />
+                <GraduationCap className="h-4 w-4" />
                 <span>Tese de Doutorado</span>
               </div>
               <div className="flex items-center gap-2">
-                <Calendar className="h-4 w-4" />
+                <Network className="h-4 w-4" />
                 <span>Grafo de Conhecimento</span>
               </div>
               <div className="flex items-center gap-2">
@@ -160,7 +160,7 @@ export default function KnowledgeGraphPortfolio() {
               <div className="grid md:grid-cols-3 gap-8 items-start">
                 <div className="md:col-span-2 space-y-4">
                   <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-lg">
-                    A trajetória política de luta de Almerinda Farias Gama --- advogada, sindicalista e uma das primeiras mulheres negras a ocupar espaços institucionais de destaque na política brasileira --- intensificou-se estrategicamente em 1929, quando migrou de Alagoas para o Rio de Janeiro. Em um Brasil recém-emergido do sistema escravista, onde os espaços de poder político eram estruturalmente restritos através de barreiras interseccionais de gênero e raça, sua filiação à Federação Brasileira pelo Progresso Feminino (FBPM), liderada por Bertha Lutz, constituiu um ato de relevância política excepcional. Neste contexto, ela não apenas engajou-se na luta pela emancipação feminina, mas introduziu criticamente no movimento majoritariamente branco a perspectiva específica da mulher negra e trabalhadora, conceitualizando o sufrágio como "arma" estratégica fundamental contra as estruturas opressivas do sexismo e do racismo.
+                    A trajetória política de luta de Almerinda Farias Gama – advogada, sindicalista e uma das primeiras mulheres negras a ocupar espaços institucionais de destaque na política brasileira – intensificou-se estrategicamente em 1929, quando migrou de Alagoas para o Rio de Janeiro. Em um Brasil recém-emergido do sistema escravista, onde os espaços de poder político eram estruturalmente restritos através de barreiras interseccionais de gênero e raça, sua filiação à Federação Brasileira pelo Progresso Feminino (FBPM), liderada por Bertha Lutz, constituiu um ato de relevância política excepcional. Neste contexto, ela não apenas engajou-se na luta pela emancipação feminina, mas introduziu criticamente no movimento majoritariamente branco a perspectiva específica da mulher negra e trabalhadora, conceitualizando o sufrágio como "arma" estratégica fundamental contra as estruturas opressivas do sexismo e do racismo.
                   </p>
 
                   <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-lg">
@@ -168,14 +168,14 @@ export default function KnowledgeGraphPortfolio() {
                   </p>
 
                   <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-lg">
-                    O momento histórico mais emblemático de seu pioneirismo político materializou-se em 20 de julho de 1933. Indicada como delegada sindical, Almerinda exerceu o voto na escolha da bancada classista para a Assembleia Nacional Constituinte de 1934. Neste ato histórico de significância excepcional, ela constituiu-se como única representante feminina --- e, particularmente, uma mulher negra --- presente no processo decisório, rompendo simultaneamente barreiras estruturais de gênero e raça através de um único gesto político. Sua candidatura em 1934, embora eleitoralmente não vitoriosa, consolidou definitivamente este legado transformador, reforçando sua posição como figura seminal na historiografia da participação política negra e feminina no Brasil.
+                    O momento histórico mais emblemático de seu pioneirismo político materializou-se em 20 de julho de 1933. Indicada como delegada sindical, Almerinda exerceu o voto na escolha da bancada classista para a Assembleia Nacional Constituinte de 1934. Neste ato histórico de significância excepcional, ela constituiu-se como única representante feminina – e, particularmente, uma mulher negra – presente no processo decisório, rompendo simultaneamente barreiras estruturais de gênero e raça através de um único gesto político. Sua candidatura em 1934, embora eleitoralmente não vitoriosa, consolidou definitivamente este legado transformador, reforçando sua posição como figura seminal na historiografia da participação política negra e feminina no Brasil.
                   </p>
                 </div>
 
                 <div className="flex flex-col items-center space-y-4">
                   <div className="w-full max-w-sm">
                     <img
-                      src="/Retrato_de_Almerinda_Farias_Gama.png"
+                      src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/almerinda-farias-gama.jpg`}
                       alt="Retrato de Almerinda Farias Gama, produzido entre 1910 e 1928. A imagem integra o arquivo pessoal de Almerinda que faz parte do acervo histórico da FGV CPDOC."
                       className="w-full h-auto rounded-lg shadow-lg border border-gray-200 dark:border-gray-700"
                     />
@@ -200,8 +200,7 @@ export default function KnowledgeGraphPortfolio() {
                 Visualização do Grafo de Conhecimento
               </CardTitle>
               <CardDescription className="text-lg">
-                Clique no botão abaixo para abrir a visualização interativa do grafo de conhecimento desenvolvido para
-                esta apresentação científica.
+                Clique no botão abaixo para abrir a visualização interativa do grafo de conhecimento desenvolvido nesta pesquisa.
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-6">
@@ -248,14 +247,79 @@ export default function KnowledgeGraphPortfolio() {
             </CardContent>
           </Card>
 
+          <Card className="shadow-lg border-0 bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm mb-8">
+            <CardHeader className="pb-4">
+              <CardTitle className="text-xl text-center text-gray-800 dark:text-gray-200">
+                Apoio Institucional
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-6 items-center justify-items-center flex-inline">
+                {/* Logo da Universidade */}
+                <div className="flex flex-col items-center space-y-2">
+                  <div className="w-30 h-30 bg-gray-100 dark:bg-gray-700 rounded-lg flex items-center justify-center border border-gray-200 dark:border-gray-600">
+                    <img
+                      src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/ufmg.png`}
+                      alt="Logo da Universidade"
+                      className="w-20 h-20 object-contain"
+                    />
+                  </div>
+                  {/* <p className="text-xs text-gray-600 dark:text-gray-400 text-center font-medium">UFMG</p> */}
+                </div>
+
+                {/* Logo da ECI */}
+                <div className="flex flex-col items-center space-y-2">
+                  <div className="w-30 h-30 bg-gray-100 dark:bg-gray-700 rounded-lg flex items-center justify-center border border-gray-200 dark:border-gray-600">
+                    <img
+                      src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/eci.png`}
+                      alt="Logo da Escola de Ciência da Informação"
+                      className="w-20 h-20 object-contain"
+                    />
+                  </div>
+                  {/* <p className="text-xs text-gray-600 dark:text-gray-400 text-center font-medium">ECI</p> */}
+                </div>
+
+                {/* Logo do PPGGOC */}
+                <div className="flex flex-col items-center space-y-2">
+                  <div className="w-30 h-30 bg-gray-100 dark:bg-gray-700 rounded-lg flex items-center justify-center border border-gray-200 dark:border-gray-600">
+                    <img
+                      src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/ppggoc.png`}
+                      alt="Logo do Programa de Pós-Graduação PPGGOC"
+                      className="w-20 h-20 object-contain"
+                    />
+                  </div>
+                  {/* <p className="text-xs text-gray-600 dark:text-gray-400 text-center font-medium">PPGGOC</p> */}
+                </div>
+
+                {/* Logo da Agência de Fomento */}
+                <div className="flex flex-col items-center space-y-2">
+                  <div className="w-30 h-30 bg-gray-100 dark:bg-gray-700 rounded-lg flex items-center justify-center border border-gray-200 dark:border-gray-600">
+                    <img
+                      src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/capes.png`}
+                      alt="Logo da Agência de Fomento Capes"
+                      className="w-20 h-20 object-contain"
+                    />
+                  </div>
+                  {/* <p className="text-xs text-gray-600 dark:text-gray-400 text-center font-medium">Fomento</p> */}
+                </div>
+              </div>
+
+              <div className="mt-6 pt-4 border-t border-gray-200 dark:border-gray-700">
+                <p className="text-center text-sm text-gray-600 dark:text-gray-400">
+                  Esta pesquisa foi desenvolvida com o apoio destas instituições.
+                </p>
+              </div>
+            </CardContent>
+          </Card>
+
           <div className="text-center space-y-4">
-            <div className="bg-white/60 dark:bg-gray-800/60 backdrop-blur-sm rounded-lg p-6 border border-gray-200 dark:border-gray-700">
+            {/* <div className="bg-white/60 dark:bg-gray-800/60 backdrop-blur-sm rounded-lg p-6 border border-gray-200 dark:border-gray-700">
               <h3 className="font-semibold text-gray-900 dark:text-white mb-2">Tecnologias Utilizadas</h3>
               <p className="text-gray-600 dark:text-gray-400 text-sm">
                 RDF (Resource Description Framework) • Turtle Syntax • Ontologias Semânticas • Visualização de Grafos •
                 Web Semântica
               </p>
-            </div>
+            </div> */}
 
             <div className="flex justify-center gap-6 text-sm">
               <Link href="/sobre" className="text-blue-600 hover:text-blue-800 hover:underline transition-colors">

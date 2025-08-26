@@ -16,7 +16,7 @@ export default function SobrePage() {
             className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 transition-colors mb-4"
           >
             <ArrowLeft className="w-4 h-4" />
-            Voltar ao Grafo de Conhecimento
+            Voltar para a página inicial
           </Link>
           <h1 className="text-4xl font-bold text-slate-800 mb-2">Sobre o Projeto</h1>
           <p className="text-slate-600 text-lg">Informações sobre a pesquisa, metodologia e autoria.</p>
@@ -35,7 +35,7 @@ export default function SobrePage() {
               <div className="grid md:grid-cols-3 gap-6">
                 <div className="md:col-span-1">
                   <Image
-                    src="/sarah.jpg"
+                    src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/sarah1.jpg`}
                     alt="Foto da autora"
                     width={250}
                     height={300}
@@ -44,7 +44,7 @@ export default function SobrePage() {
                 </div>
                 <div className="md:col-span-2 space-y-4">
                   <div>
-                    <h3 className="text-xl font-semibold text-slate-800 mb-2">Msc. Sarah Rúbia de Oliveira Santos</h3>
+                    <h3 className="text-xl font-semibold text-slate-800 mb-2">Sarah Rúbia de Oliveira Santos</h3>
                     <div className="flex flex-wrap gap-2 mb-4">
                       <Badge variant="secondary">Doutoranda e Mestre em Gestão e Organização do Conhecimento</Badge>
                       <Badge variant="secondary">Pesquisadora</Badge>
@@ -53,7 +53,7 @@ export default function SobrePage() {
                   </div>
                   <div className="space-y-3 text-slate-700">
                     <p>
-                      DDoutoranda e Mestre pelo Programa de Pós-Graduação em Gestão & Organização do Conhecimento da Universidade Federal de Minas Gerais (PPG-GOC/UFMG) e Bacharela em Biblioteconomia pela Universidade Federal de Alagoas (UFAL). Possui uma sólida trajetória acadêmica, com atuação integrada em projetos de pesquisa, ensino e extensão.
+                      Doutoranda e Mestre pelo Programa de Pós-Graduação em Gestão & Organização do Conhecimento da Universidade Federal de Minas Gerais (PPG-GOC/UFMG) e Bacharela em Biblioteconomia pela Universidade Federal de Alagoas (UFAL). Possui uma sólida trajetória acadêmica, com atuação integrada em projetos de pesquisa, ensino e extensão.
                     </p>
                     <p>
                       É pesquisadora em múltiplos grupos, incluindo o Grupo de Pesquisa Representação do Conhecimento e Recuperação da Informação (RECRI/UFMG), o Laboratório de Estudos Métricos da Informação na Web (Lab iMetrics) e o Grupo de Pesquisa em Política e Tecnologias da Informação e Comunicação (GPOLITICs). Atualmente, suas investigações se concentram na aplicação de grafos de conhecimento e Linked Data para a representação e análise de dados históricos, contribuindo para o desenvolvimento de novas metodologias de visualização e interpretação de fontes primárias. Suas principais linhas de interesse são Web Semântica, Linked Data, Ciência Aberta, Comunicação Científica e Estudos Métricos da Informação.
@@ -75,7 +75,7 @@ export default function SobrePage() {
               <div className="grid md:grid-cols-3 gap-6">
                 <div className="md:col-span-1">
                   <Image
-                    src="/celia.jpg"
+                    src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/celia.jpg`}
                     alt="Foto da orientadora"
                     width={250}
                     height={300}
@@ -84,7 +84,7 @@ export default function SobrePage() {
                 </div>
                 <div className="md:col-span-2 space-y-4">
                   <div>
-                    <h3 className="text-xl font-semibold text-slate-800 mb-2">Dra. Célia da Consolação Dias</h3>
+                    <h3 className="text-xl font-semibold text-slate-800 mb-2">Célia da Consolação Dias</h3>
                     <div className="flex flex-wrap gap-2 mb-4">
                       <Badge variant="secondary">Doutora em Ciência da Informação</Badge>
                       <Badge variant="secondary">Professora</Badge>
