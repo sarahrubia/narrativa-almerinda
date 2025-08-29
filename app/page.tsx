@@ -23,7 +23,7 @@ export default function KnowledgeGraphPortfolio() {
       // Show instructions
       setTimeout(() => {
         alert(
-          "A ferramenta de visualização foi aberta em uma nova aba. Se o conteúdo RDF não for carregado, cole o conteúdo RDF (Ctrl+V) na caixa de texto para gerar a visualização do grafo.",
+          "A ferramenta de visualização foi aberta em uma nova aba. Se o conteúdo RDF não for carregado, copie e cole o conteúdo RDF na caixa de texto para gerar a visualização do grafo.",
         )
       }, 500)
     } catch (error) {
@@ -63,7 +63,7 @@ export default function KnowledgeGraphPortfolio() {
               "@id": "https://sarahrubia.github.io/narrativa-almerinda/knowledge-graph.ttl",
               name: "Grafo de Conhecimento da Trajetória de Almerinda Farias Gama",
               description:
-                "Dataset semântico sobre figura histórica, representando estruturas de conhecimento e relacionamentos identificados durante a pesquisa acadêmica.",
+                "Dataset semântico sobre Almerinda Farias Gama, representando estruturas de conhecimento e relacionamentos identificados durante a pesquisa acadêmica.",
               creator: {
                 "@type": "Person",
                 name: "Sarah Rúbia de Oliveira Santos",
@@ -240,7 +240,7 @@ export default function KnowledgeGraphPortfolio() {
               <div className="bg-gray-50 dark:bg-gray-800 p-4 rounded-lg border">
                 <p className="text-sm text-gray-700 dark:text-gray-300">
                   <strong>Como usar:</strong> Ao clicar em "Visualizar Grafo Interativo", a ferramenta de visualização
-                  será aberta em uma nova aba com o RDF já carregado. Você poderá explorar os nós, arestas e
+                  será aberta em uma nova aba com o RDF carregado. Você poderá explorar os nós, arestas e
                   propriedades do grafo de forma interativa.
                 </p>
               </div>

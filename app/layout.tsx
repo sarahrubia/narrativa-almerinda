@@ -5,29 +5,29 @@ import { GeistMono } from "geist/font/mono"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "Grafo de Conhecimento - Apresentação Científica",
+  title: "Almerinda Farias Gama - Grafo de Conhecimento",
   description:
-    "Visualização interativa de grafo de conhecimento sobre figura histórica, desenvolvido para apresentação em evento científico.",
-  keywords: "RDF, Linked Data, Knowledge Graph, Semantic Web, Digital Humanities, Historical Research",
-  authors: [{ name: "Nome do Pesquisador" }],
+    "Visualização interativa de grafo de conhecimento sobre Almerinda Farias Gama, desenvolvido como parte da tese de doutorado.",
+  keywords: "RDF, Linked Data, Knowledge Graph, Information Science, Semantic Web, Digital Humanities",
+  authors: [{ name: "Sarah Rúbia de Oliveira Santos" }],
   openGraph: {
-    title: "Grafo de Conhecimento - Figura Histórica",
+    title: "Almerinda Farias Gama: Grafo de Conhecimento",
     description: "Dataset semântico e visualização interativa para pesquisa acadêmica",
     type: "website",
     url: "https://sarahrubia.github.io/narrativa-almerinda/",
     images: [
       {
-        url: "/historical-academic-portrait.png",
+        url: "/almerinda-farias-gama.jpg",
         width: 800,
         height: 600,
-        alt: "Figura histórica representada no grafo de conhecimento",
+        alt: "Almerinda Farias Gama, representada no grafo de conhecimento",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Grafo de Conhecimento - Apresentação Científica",
-    description: "Visualização interativa de pesquisa histórica usando tecnologias de Web Semântica",
+    title: "Almerinda Farias Gama",
+    description: "Visualização interativa de narrativa sobre Almerinda Farias Gama usando tecnologias de Web Semântica",
   },
   generator: "v0.app",
 }
