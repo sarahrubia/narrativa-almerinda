@@ -13,7 +13,7 @@ export default function SobrePage() {
         <div className="mb-8">
           <Link
             href="/"
-            className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 transition-colors mb-4"
+            className="inline-flex items-center gap-2 text-slate-700 hover:text-slate-900 hover:bg-slate-100 transition-colors mb-4"
           >
             <ArrowLeft className="w-4 h-4" />
             Voltar para a página inicial
@@ -24,10 +24,10 @@ export default function SobrePage() {
 
         <div className="space-y-8">
           {/* Seção da Autora */}
-          <Card className="shadow-lg">
+          <Card className="shadow-xl border border-gray-200 bg-white dark:bg-gray-800 mb-8">
             <CardHeader>
               <CardTitle className="flex items-center gap-2 text-2xl">
-                <User className="w-6 h-6 text-blue-600" />
+                <User className="h-7 w-7 text-slate-700" />
                 Sobre a Autora
               </CardTitle>
             </CardHeader>
@@ -64,10 +64,10 @@ export default function SobrePage() {
             </CardContent>
           </Card>
 
-          <Card className="shadow-lg">
+          <Card className="shadow-xl border border-gray-200 bg-white dark:bg-gray-800 mb-8">
             <CardHeader>
               <CardTitle className="flex items-center gap-2 text-2xl">
-                <User className="w-6 h-6 text-blue-600" />
+                <User className="h-7 w-7 text-slate-700" />
                 Sobre a Orientadora
               </CardTitle>
             </CardHeader>
@@ -105,10 +105,10 @@ export default function SobrePage() {
           </Card>
 
           {/* Resumo do Trabalho */}
-          <Card className="shadow-lg">
+          <Card className="shadow-xl border border-gray-200 bg-white dark:bg-gray-800 mb-8">
             <CardHeader>
               <CardTitle className="flex items-center gap-2 text-2xl">
-                <FileText className="w-6 h-6 text-blue-600" />
+                <FileText className="h-7 w-7 text-slate-700" />
                 Resumo do Trabalho
               </CardTitle>
             </CardHeader>
@@ -140,12 +140,12 @@ export default function SobrePage() {
           <Card className="shadow-lg">
             <CardHeader>
               <CardTitle className="flex items-center gap-2 text-2xl">
-                <BookOpen className="w-6 h-6 text-blue-600" />
+                <BookOpen className="h-7 w-7 text-slate-700" />
                 Referência Bibliográfica
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <div className="bg-slate-50 p-6 rounded-lg border-l-4 border-blue-500">
+              <div className="bg-slate-50 p-6 rounded-lg border-l-4 border-slate-700">
                 <p className="text-slate-800 font-mono text-sm leading-relaxed">
                   SANTOS, S. R. O. de.{" "}
                   <strong>
@@ -209,7 +209,7 @@ export default function SobrePage() {
               href="https://sketch.zazuko.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-600 hover:underline"
+              className="text-slate-700 hover:underline"
             >
               Sketch Zazuko
             </a>

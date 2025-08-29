@@ -103,12 +103,12 @@ export default function KnowledgeGraphPortfolio() {
         />
       </Head>
 
-      <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 dark:from-gray-900 dark:to-slate-800 p-4">
+      <div className="min-h-screen bg-gradient-to-br from-slate-100 to-gray-100 dark:from-gray-900 dark:to-slate-900 p-4">
         <div className="max-w-6xl mx-auto">
           <div className="flex justify-end mb-4">
             <Link
               href="/sobre"
-              className="inline-flex items-center gap-2 px-4 py-2 text-blue-600 hover:text-blue-800 hover:bg-blue-50 rounded-lg transition-colors"
+              className="inline-flex items-center gap-2 px-4 py-2 text-slate-700 hover:text-slate-900 hover:bg-slate-100 rounded-lg transition-colors"
             >
               <Info className="w-4 h-4" />
               Sobre o Projeto
@@ -146,10 +146,10 @@ export default function KnowledgeGraphPortfolio() {
             </p>
           </div>
 
-          <Card className="shadow-2xl border-0 bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm mb-8">
+          <Card className="shadow-xl border border-gray-200 bg-white dark:bg-gray-800 mb-8">
             <CardHeader className="pb-6">
               <CardTitle className="flex items-center gap-3 text-2xl">
-                <User className="h-7 w-7 text-blue-700" />
+                <User className="h-7 w-7 text-slate-700" />
                 Contexto Histórico e Narrativa
               </CardTitle>
               <CardDescription className="text-lg">
@@ -193,10 +193,10 @@ export default function KnowledgeGraphPortfolio() {
             </CardContent>
           </Card>
 
-          <Card className="shadow-2xl border-0 bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm mb-8">
+          <Card className="shadow-xl border border-gray-200 bg-white dark:bg-gray-800 mb-8">
             <CardHeader className="pb-6">
               <CardTitle className="flex items-center gap-3 text-2xl">
-                <BookOpen className="h-7 w-7 text-blue-700" />
+                <BookOpen className="h-7 w-7 text-slate-700" />
                 Visualização do Grafo de Conhecimento
               </CardTitle>
               <CardDescription className="text-lg">
@@ -204,11 +204,11 @@ export default function KnowledgeGraphPortfolio() {
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-6">
-              <div className="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-lg border border-blue-200 dark:border-blue-800">
-                <h3 className="font-semibold text-blue-900 dark:text-blue-100 mb-3">
+              <div className="bg-slate-50 dark:bg-slate-800/50 p-6 rounded-lg border border-slate-200 dark:border-slate-700">
+                <h3 className="font-semibold text-slate-900 dark:text-slate-100 mb-3">
                   Sobre este Grafo de Conhecimento:
                 </h3>
-                <ul className="text-blue-800 dark:text-blue-200 space-y-2">
+                <ul className="text-slate-700 dark:text-slate-300 space-y-2">
                   <li>• Estrutura semântica baseada em ontologias padrão</li>
                   <li>• Relacionamentos hierárquicos e associativos entre conceitos</li>
                   <li>• Formato RDF/Turtle para máxima interoperabilidade</li>
@@ -219,7 +219,7 @@ export default function KnowledgeGraphPortfolio() {
               <div className="flex gap-4 flex-col sm:flex-row">
                 <Button
                   onClick={handleVisualizeGraph}
-                  className="flex-1 bg-blue-700 hover:bg-blue-800 text-white text-lg py-6"
+                  className="flex-1 bg-slate-800 hover:bg-slate-900 text-white text-lg py-6"
                   size="lg"
                 >
                   <Eye className="h-6 w-6 mr-3" />
@@ -230,7 +230,7 @@ export default function KnowledgeGraphPortfolio() {
                   onClick={handleCopyRDF}
                   variant="outline"
                   size="lg"
-                  className="border-blue-200 text-blue-700 hover:bg-blue-50 bg-transparent py-6"
+                  className="border-slate-300 text-slate-700 hover:bg-slate-50 bg-transparent py-6"
                 >
                   <FileText className="h-5 w-5 mr-2" />
                   Copiar RDF
@@ -247,7 +247,7 @@ export default function KnowledgeGraphPortfolio() {
             </CardContent>
           </Card>
 
-          <Card className="shadow-lg border-0 bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm mb-8">
+          <Card className="shadow-lg border border-gray-200 bg-white dark:bg-gray-800 mb-8">
             <CardHeader className="pb-4">
               <CardTitle className="text-xl text-center text-gray-800 dark:text-gray-200">
                 Apoio Institucional
@@ -322,7 +322,7 @@ export default function KnowledgeGraphPortfolio() {
             </div> */}
 
             <div className="flex justify-center gap-6 text-sm">
-              <Link href="/sobre" className="text-blue-600 hover:text-blue-800 hover:underline transition-colors">
+              <Link href="/sobre" className="text-slate-600 hover:text-slate-800 hover:underline transition-colors">
                 Sobre o Projeto
               </Link>
               <span className="text-gray-300">•</span>
@@ -330,7 +330,7 @@ export default function KnowledgeGraphPortfolio() {
                 href="https://sketch.zazuko.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300 hover:underline transition-colors"
+                className="text-slate-600 hover:text-slate-800 hover:underline transition-colors"
               >
                 Visualização Powered by Sketch Zazuko
               </a>
