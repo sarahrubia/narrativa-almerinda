@@ -2,7 +2,7 @@ import fs from 'fs/promises';
 import { Writer, Parser } from 'n3';
 import path from 'path';
 
-const outputDir = './entidades';
+const outputDir = './public';
 
 async function splitTtl(inputFile) {
   try {
