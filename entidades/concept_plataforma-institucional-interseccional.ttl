@@ -1,0 +1,4 @@
+<sarahrubia.github.io/narrativa-almerinda/concept_plataforma-institucional-interseccional> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Plataforma institucional para luta interseccional"@pt;
+    <http://www.w3.org/2004/02/skos/core#broader> <sarahrubia.github.io/narrativa-almerinda/concept_estrategias-organizativas>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "Função da liderança sindical como base para articulação de múltiplas dimensões de opressão."@pt.

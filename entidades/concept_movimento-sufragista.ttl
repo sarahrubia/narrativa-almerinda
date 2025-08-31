@@ -1,0 +1,3 @@
+<sarahrubia.github.io/narrativa-almerinda/concept_movimento-sufragista> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Movimento Sufragista"@pt;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "Movimento político pela conquista do direito ao voto feminino, contexto principal da atuação de Almerinda."@pt.

@@ -1,0 +1,3 @@
+<sarahrubia.github.io/narrativa-almerinda/reforçou> a <http://www.w3.org/2002/07/owl#ObjectProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "reforçou"@pt;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "Verbo para ações que fortalecem ou consolidam posições, conceitos ou legados existentes."@pt.

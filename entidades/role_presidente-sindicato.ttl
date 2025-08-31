@@ -1,0 +1,3 @@
+<sarahrubia.github.io/narrativa-almerinda/role_presidente-sindicato> a <https://dlnarratives.eu/ontology#Role>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "presidente de sindicato"@pt;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "Papel de liderança institucional pioneiro para mulheres negras no movimento sindical brasileiro."@pt.

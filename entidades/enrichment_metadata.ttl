@@ -1,0 +1,7 @@
+<sarahrubia.github.io/narrativa-almerinda/enrichment_metadata> a <http://www.w3.org/2002/07/owl#Ontology>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Metodologia de Enriquecimento Semântico para Narrativas Interseccionais"@pt;
+    <http://purl.org/dc/elements/1.1/creator> "Sarah Rúbia de Oliveira Santos";
+    <http://purl.org/dc/elements/1.1/date> "2025";
+    <http://purl.org/dc/elements/1.1/description> "Documentação das estratégias aplicadas para superar limitações de vocabulários genéricos na representação de identidades complexas e agência política de figuras subalternizadas."@pt;
+    <http://www.w3.org/2002/07/owl#versionInfo> "Versão enriquecida com vocabulário de agência especializado e conceitos interseccionais específicos"@pt;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "Este enriquecimento demonstra como ontologias podem transcender aplicação mecânica de padrões para constituir processo hermenêutico de negociação crítica com frameworks existentes."@pt.
