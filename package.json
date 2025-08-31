@@ -1,6 +1,5 @@
 {
   "name": "my-v0-project",
-  "type": "module",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -10,7 +9,7 @@
     "start": "next start",
     "export": "next build",
     "deploy": "npm run build && gh-pages -d out --nojekyll --cname https://sarahrubia.github.io/narrativa-almerinda/",
-    "split": "node ./app/scripts/split-ttl.js"
+    "split": "node ./app/scripts/split-ttl.mjs"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
