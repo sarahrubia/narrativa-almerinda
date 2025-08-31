@@ -1,0 +1,4 @@
+<sarahrubia.github.io/narrativa-almerinda/foiMotivadaPor> a <http://www.w3.org/2002/07/owl#ObjectProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://erlangen-crm.org/current/P17_was_motivated_by>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "foi motivada por"@pt;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "Propriedade especializada para expressar motivações políticas e sociais específicas de ativistas, permitindo capturar a agência intencional além de simples participação em eventos."@pt.

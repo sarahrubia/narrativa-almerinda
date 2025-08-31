@@ -1,0 +1,4 @@
+<sarahrubia.github.io/narrativa-almerinda/concept_visao-interseccional-para-movimento-branco> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Introdução de visão interseccional em movimento majoritariamente branco"@pt;
+    <http://www.w3.org/2004/02/skos/core#broader> <sarahrubia.github.io/narrativa-almerinda/concept_transformacao-movimento-feminista>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "Conceito para capturar o impacto transformador da participação de Almerinda na FBPM."@pt.

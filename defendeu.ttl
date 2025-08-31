@@ -1,0 +1,4 @@
+<sarahrubia.github.io/narrativa-almerinda/defendeu> a <http://www.w3.org/2002/07/owl#ObjectProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "defendeu"@pt;
+    <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <sarahrubia.github.io/narrativa-almerinda/lutouPor>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "Especialização de 'lutou por' focada na atuação jurídica e advocatícia, refletindo a formação profissional de Almerinda."@pt.

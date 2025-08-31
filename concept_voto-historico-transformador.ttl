@@ -1,0 +1,4 @@
+<sarahrubia.github.io/narrativa-almerinda/concept_voto-historico-transformador> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Voto histórico transformador"@pt;
+    <http://www.w3.org/2004/02/skos/core#broader> <sarahrubia.github.io/narrativa-almerinda/concept_atos-politicos-pioneiros>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "Caracterização do voto de Almerinda como ato de transformação histórica."@pt.

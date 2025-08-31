@@ -1,0 +1,11 @@
+<sarahrubia.github.io/narrativa-almerinda/digitalObject_panfleto-1934> a <http://schema.org/DigitalDocument>, <http://erlangen-crm.org/current/E31_Document>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Panfleto da campanha eleitoral de Almerinda Farias Gama (1934)"@pt;
+    <http://purl.org/dc/elements/1.1/source> "Fundação Getúlio Vargas - Coleção Almerinda Farias Gama";
+    <http://purl.org/dc/elements/1.1/identifier> "AFG d 1934.10.00";
+    <http://purl.org/dc/elements/1.1/date> "1934-10"^^<http://www.w3.org/2001/XMLSchema#gYearMonth>;
+    <http://purl.org/dc/elements/1.1/description> "Panfleto evidenciando a plataforma política de Almerinda centrada nos direitos das trabalhadoras."@pt;
+    <http://schema.org/url> <https://docvirt.com/docreader.net/DocReader.aspx?bib=AFG_D>;
+    <http://erlangen-crm.org/current/P70_documents> <sarahrubia.github.io/narrativa-almerinda/narrative_almerinda>;
+    <http://erlangen-crm.org/current/P67_refers_to> <sarahrubia.github.io/narrativa-almerinda/event_candidatura-1934>, <sarahrubia.github.io/narrativa-almerinda/person_almerinda-farias-gama>, <sarahrubia.github.io/narrativa-almerinda/concept_independencia-economica>, <sarahrubia.github.io/narrativa-almerinda/concept_garantia-legal-trabalhador>, <sarahrubia.github.io/narrativa-almerinda/concept_ensino-obrigatorio-e-gratuito>;
+    <http://purl.org/dc/elements/1.1/rights> "Os direitos de uso devem ser verificados no repositório de origem (Fundação Getúlio Vargas)."@pt;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "Este documento materializa a conexão entre fonte documental e evento narrativo, superando a fragmentação original dos acervos."@pt.

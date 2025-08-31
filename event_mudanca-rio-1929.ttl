@@ -1,0 +1,12 @@
+<sarahrubia.github.io/narrativa-almerinda/event_mudanca-rio-1929> <http://erlangen-crm.org/current/P175_starts_before_or_with_the_start_of> <sarahrubia.github.io/narrativa-almerinda/event_filiacao-fbpm>;
+    a <http://erlangen-crm.org/current/E9_Move>, <https://dlnarratives.eu/ontology#Event>;
+    <https://dlnarratives.eu/ontology#partOfNarrative> <sarahrubia.github.io/narrativa-almerinda/narrative_almerinda>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Migração estratégica de Almerinda para o Rio de Janeiro"@pt;
+    <https://dlnarratives.eu/ontology#hasDescription> "Evento que intensificou estrategicamente a trajetória política de luta de Almerinda."@pt;
+    <http://erlangen-crm.org/current/P14_carried_out_by> <sarahrubia.github.io/narrativa-almerinda/person_almerinda-farias-gama>;
+    <http://erlangen-crm.org/current/P27_moved_from> <sarahrubia.github.io/narrativa-almerinda/place_alagoas>;
+    <http://erlangen-crm.org/current/P26_moved_to> <sarahrubia.github.io/narrativa-almerinda/place_rio-de-janeiro-city>;
+    <http://erlangen-crm.org/current/P4_has_time-span> _:n3-3;
+    <sarahrubia.github.io/narrativa-almerinda/foiMotivadaPor> <sarahrubia.github.io/narrativa-almerinda/concept_desigualdade-salarial>, <sarahrubia.github.io/narrativa-almerinda/concept_busca-oportunidades-profissionais>;
+    <http://erlangen-crm.org/current/P21_had_general_purpose> <sarahrubia.github.io/narrativa-almerinda/concept_intensificacao-luta-politica>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "Migração modelada como ato intencional estratégico, não como simples deslocamento geográfico, capturando a agência política da decisão."@pt.

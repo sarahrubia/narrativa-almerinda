@@ -1,0 +1,12 @@
+<sarahrubia.github.io/narrativa-almerinda/event_almerinda-presidente-sindicato> <http://erlangen-crm.org/current/P175_starts_before_or_with_the_start_of> <sarahrubia.github.io/narrativa-almerinda/event_votacao-constituinte-1933>;
+    a <http://erlangen-crm.org/current/E7_Activity>, <https://dlnarratives.eu/ontology#Event>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Liderança sindical de Almerinda como primeira presidente"@pt;
+    <https://dlnarratives.eu/ontology#partOfNarrative> <sarahrubia.github.io/narrativa-almerinda/narrative_almerinda>;
+    <http://erlangen-crm.org/current/P14_carried_out_by> <sarahrubia.github.io/narrativa-almerinda/person_almerinda-farias-gama>;
+    <https://dlnarratives.eu/ontology#hadParticipant> _:n3-10;
+    <sarahrubia.github.io/narrativa-almerinda/presidiu> <sarahrubia.github.io/narrativa-almerinda/org_sindicato-datilografas>;
+    <sarahrubia.github.io/narrativa-almerinda/operouComo> <sarahrubia.github.io/narrativa-almerinda/concept_plataforma-institucional-interseccional>;
+    <sarahrubia.github.io/narrativa-almerinda/combateu> <sarahrubia.github.io/narrativa-almerinda/concept_desigualdade-salarial>;
+    <sarahrubia.github.io/narrativa-almerinda/promoveu> <sarahrubia.github.io/narrativa-almerinda/concept_independencia-economica>;
+    <http://erlangen-crm.org/current/P21_had_general_purpose> <sarahrubia.github.io/narrativa-almerinda/concept_independencia-economica>, <sarahrubia.github.io/narrativa-almerinda/concept_direitos-trabalhadoras>, <sarahrubia.github.io/narrativa-almerinda/concept_combate-discriminacao-interseccional>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "Liderança sindical modelada como plataforma institucional para luta interseccional articulada, transcendendo função administrativa."@pt.

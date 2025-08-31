@@ -1,0 +1,10 @@
+<sarahrubia.github.io/narrativa-almerinda/concept_perspectiva-mulher-negra-trabalhadora> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Perspectiva da mulher negra trabalhadora"@pt;
+    <http://www.w3.org/2004/02/skos/core#broader> <sarahrubia.github.io/narrativa-almerinda/concept_feminismo-negro>;
+    <http://www.w3.org/2004/02/skos/core#narrower> <sarahrubia.github.io/narrativa-almerinda/concept_interseccionalidade-genero-raca-classe>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "Perspectiva específica introduzida por Almerinda no movimento feminista, articulando gênero, raça e classe."@pt;
+    a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Perspectiva da mulher negra trabalhadora"@pt;
+    <http://www.w3.org/2004/02/skos/core#broader> <sarahrubia.github.io/narrativa-almerinda/concept_feminismo-negro>;
+    <http://www.w3.org/2004/02/skos/core#narrower> <sarahrubia.github.io/narrativa-almerinda/concept_interseccionalidade-genero-raca-classe>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "Conceito específico introduzido por Almerinda no movimento feminista, articulando simultaneamente gênero, raça e classe no contexto brasileiro pós-abolição."@pt.
