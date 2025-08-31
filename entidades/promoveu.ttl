@@ -1,3 +1,0 @@
-<sarahrubia.github.io/narrativa-almerinda/promoveu> a <http://www.w3.org/2002/07/owl#ObjectProperty>;
-    <http://www.w3.org/2000/01/rdf-schema#label> "promoveu"@pt;
-    <http://www.w3.org/2000/01/rdf-schema#comment> "Verbo de agência para ações de incentivo e desenvolvimento de conceitos ou práticas."@pt.

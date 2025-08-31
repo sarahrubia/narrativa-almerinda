@@ -1,4 +1,0 @@
-<sarahrubia.github.io/narrativa-almerinda/concept_intensificacao-luta-politica> a <http://www.w3.org/2004/02/skos/core#Concept>;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "Intensificação da luta política"@pt;
-    <http://www.w3.org/2004/02/skos/core#broader> <sarahrubia.github.io/narrativa-almerinda/concept_pioneirismo-politico>;
-    <http://www.w3.org/2000/01/rdf-schema#comment> "Conceito para representar o propósito estratégico da migração na trajetória de ativismo."@pt.

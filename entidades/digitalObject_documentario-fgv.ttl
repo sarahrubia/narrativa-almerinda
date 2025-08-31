@@ -1,8 +1,0 @@
-<sarahrubia.github.io/narrativa-almerinda/digitalObject_documentario-fgv> a <http://schema.org/VideoObject>, <http://erlangen-crm.org/current/E38_Image>, <http://erlangen-crm.org/current/E31_Document>;
-    <http://www.w3.org/2000/01/rdf-schema#label> "Almerinda, a luta continua"@pt;
-    <http://purl.org/dc/elements/1.1/source> "Fundação Getúlio Vargas (FGV) - CPDOC - Núcleo de Audiovisual e Documentário"@pt;
-    <http://purl.org/dc/elements/1.1/creator> "Cibele Tenório"@pt;
-    <http://purl.org/dc/elements/1.1/description> "Documentário que resgata a vida de Almerinda Farias Gama, uma das primeiras militantes feministas brasileiras."@pt;
-    <http://schema.org/url> <https://www.youtube.com/watch?v=U0oc8sux7yI&t>;
-    <http://erlangen-crm.org/current/P129_is_about> <sarahrubia.github.io/narrativa-almerinda/person_almerinda-farias-gama>, <sarahrubia.github.io/narrativa-almerinda/concept_feminismo-negro>;
-    <http://www.w3.org/2000/01/rdf-schema#comment> "Documentário que serviu como fonte para a construção da narrativa."@pt.

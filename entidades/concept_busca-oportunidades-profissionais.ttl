@@ -1,4 +1,0 @@
-<sarahrubia.github.io/narrativa-almerinda/concept_busca-oportunidades-profissionais> a <http://www.w3.org/2004/02/skos/core#Concept>;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "Busca por oportunidades profissionais"@pt;
-    <http://www.w3.org/2004/02/skos/core#broader> <sarahrubia.github.io/narrativa-almerinda/concept_emancipacao-feminina>;
-    <http://www.w3.org/2000/01/rdf-schema#comment> "Conceito criado para capturar motivação específica da migração de mulheres profissionais no contexto pós-abolição."@pt.

@@ -1,4 +1,0 @@
-<sarahrubia.github.io/narrativa-almerinda/concept_sufragio-feminino> a <http://www.w3.org/2004/02/skos/core#Concept>;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "Sufrágio Feminino"@pt;
-    <http://www.w3.org/2004/02/skos/core#broader> <sarahrubia.github.io/narrativa-almerinda/concept_emancipacao-feminina>;
-    <http://www.w3.org/2000/01/rdf-schema#comment> "Direito ao voto visto por Almerinda como 'arma' contra sexismo e racismo."@pt.

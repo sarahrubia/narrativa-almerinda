@@ -1,9 +1,0 @@
-<sarahrubia.github.io/narrativa-almerinda/event_fundacao-sindicato> <http://erlangen-crm.org/current/P175_starts_before_or_with_the_start_of> <sarahrubia.github.io/narrativa-almerinda/event_almerinda-presidente-sindicato>;
-    a <http://erlangen-crm.org/current/E66_Formation>, <https://dlnarratives.eu/ontology#Event>;
-    <http://www.w3.org/2000/01/rdf-schema#label> "Fundação do Sindicato dos Datilógrafas e Taquígrafas"@pt;
-    <https://dlnarratives.eu/ontology#partOfNarrative> <sarahrubia.github.io/narrativa-almerinda/narrative_almerinda>;
-    <http://erlangen-crm.org/current/P14_carried_out_by> <sarahrubia.github.io/narrativa-almerinda/person_almerinda-farias-gama>;
-    <http://erlangen-crm.org/current/P95_has_formed> <sarahrubia.github.io/narrativa-almerinda/org_sindicato-datilografas>;
-    <sarahrubia.github.io/narrativa-almerinda/foiMotivadaPor> <sarahrubia.github.io/narrativa-almerinda/concept_necessidade-organizacao-trabalhadora>;
-    <http://erlangen-crm.org/current/P21_had_general_purpose> <sarahrubia.github.io/narrativa-almerinda/concept_plataforma-luta-interseccional>;
-    <http://www.w3.org/2000/01/rdf-schema#comment> "Fundação como ato de criação institucional para luta interseccional, estabelecendo plataforma organizativa específica."@pt.

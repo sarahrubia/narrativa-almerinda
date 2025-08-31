@@ -1,3 +1,0 @@
-<sarahrubia.github.io/narrativa-almerinda/role_militante> a <https://dlnarratives.eu/ontology#Role>;
-    <http://www.w3.org/2000/01/rdf-schema#label> "militante"@pt;
-    <http://www.w3.org/2000/01/rdf-schema#comment> "Papel de ativismo político que perpassa toda sua trajetória."@pt.

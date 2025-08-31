@@ -1,4 +1,0 @@
-<sarahrubia.github.io/narrativa-almerinda/concept_unica-representante-feminina-negra> a <http://www.w3.org/2004/02/skos/core#Concept>;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "Única representante feminina negra em processo político decisório"@pt;
-    <http://www.w3.org/2004/02/skos/core#broader> <sarahrubia.github.io/narrativa-almerinda/concept_pioneirismo-politico-negro-feminino>;
-    <http://www.w3.org/2000/01/rdf-schema#comment> "Status histórico específico de Almerinda na votação da bancada classista."@pt.

@@ -1,4 +1,0 @@
-<sarahrubia.github.io/narrativa-almerinda/consolidou> a <http://www.w3.org/2002/07/owl#ObjectProperty>;
-    <http://www.w3.org/2000/01/rdf-schema#label> "consolidou"@pt;
-    <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://erlangen-crm.org/current/P15_was_influenced_by>;
-    <http://www.w3.org/2000/01/rdf-schema#comment> "Verbo especializado para ações que estabelecem legados duradouros e transformações históricas permanentes, criando cadeias de influência temporal."@pt.

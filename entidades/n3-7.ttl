@@ -1,2 +1,0 @@
-_:n3-7 a <http://erlangen-crm.org/current/E52_Time-Span>;
-    <http://erlangen-crm.org/current/P82_at_some_time_within> "1931-06"^^<http://www.w3.org/2001/XMLSchema#gYearMonth>.
