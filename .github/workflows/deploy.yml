@@ -17,6 +17,11 @@ jobs:
         
     - name: Install dependencies
       run: npm install
+
+    - name: Rodar Script e Gerar Arquivos
+      run: |
+          node ./app/scripts/split-ttl.mjs 
+          cp -r entidades out/
       
     - name: Build
       run: npm run build
