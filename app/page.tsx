@@ -10,7 +10,7 @@ export default function KnowledgeGraphPortfolio() {
   const handleVisualizeGraph = async () => {
     try {
       // Load the RDF file from the public directory
-      const response = await fetch("/knowledge-graph.ttl")
+      const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/knowledge-graph.ttl`)
       const rdfContent = await response.text()
 
       // Store the RDF content for the visualization tool
@@ -34,7 +34,7 @@ export default function KnowledgeGraphPortfolio() {
 
   const handleCopyRDF = async () => {
     try {
-      const response = await fetch("/knowledge-graph.ttl")
+      const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/knowledge-graph.ttl`)
       const rdfContent = await response.text()
 
       await navigator.clipboard.writeText(rdfContent)
