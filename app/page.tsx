@@ -7,30 +7,14 @@ import Head from "next/head"
 import Link from "next/link"
 
 export default function KnowledgeGraphPortfolio() {
-  const handleVisualizeGraph = async () => {
+  const handleVisualizeGraph = () => {
     try {
-      // Load the RDF file from the public directory
-      const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/knowledge-graph.ttl`)
-      const rdfContent = await response.text()
-
-      // Store the RDF content for the visualization tool
-      localStorage.setItem("rdf_content_for_sketch", rdfContent)
-      localStorage.setItem("rdf_format_for_sketch", "turtle")
-
-      // Open Sketch Zazuko in a new tab
-      window.open("https://sketch.zazuko.com/", "_blank")
-
-      // Show instructions
-      setTimeout(() => {
-        alert(
-          "A ferramenta de visualização foi aberta em uma nova aba. Se o conteúdo RDF não for carregado, copie e cole o conteúdo RDF na caixa de texto para gerar a visualização do grafo.",
-        )
-      }, 500)
+      window.open("https://s.zazuko.com/3uR4Ref", "_blank");
     } catch (error) {
-      console.error("Erro ao carregar o arquivo RDF:", error)
-      alert("Erro ao carregar o grafo de conhecimento. Verifique se o arquivo está disponível.")
+      console.error("Erro ao abrir a URL:", error);
+      alert("Não foi possível abrir a ferramenta de visualização.");
     }
-  }
+  };
 
   const handleCopyRDF = async () => {
     try {
