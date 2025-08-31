@@ -1,0 +1,3 @@
+<sarahrubia.github.io/narrativa-almerinda/presidiu> a <http://www.w3.org/2002/07/owl#ObjectProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "presidiu"@pt;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "Especifica o exercício de liderança institucional, qualificando além de simples participação organizacional."@pt.

@@ -1,0 +1,7 @@
+<sarahrubia.github.io/narrativa-almerinda/concept_feminismo-negro> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Feminismo Negro"@pt;
+    <http://www.w3.org/2004/02/skos/core#broader> <sarahrubia.github.io/narrativa-almerinda/concept_movimento-sufragista>;
+    <http://www.w3.org/2004/02/skos/core#definition> <sarahrubia.github.io/narrativa-almerinda/definicao_feminismo_negro>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "Perspectiva feminista que incorpora a experiência específica da mulher negra, introduzida por Almerinda na FBPM majoritariamente branca."@pt;
+    <http://www.w3.org/2004/02/skos/core#related> <sarahrubia.github.io/narrativa-almerinda/concept_interseccionalidade-genero-raca-classe>;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <sarahrubia.github.io/narrativa-almerinda/narrative-ontology-concepts>.

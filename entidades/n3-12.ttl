@@ -1,0 +1,2 @@
+_:n3-12 a <http://erlangen-crm.org/current/E52_Time-Span>;
+    <http://erlangen-crm.org/current/P82_at_some_time_within> "1933-07-20"^^<http://www.w3.org/2001/XMLSchema#date>.

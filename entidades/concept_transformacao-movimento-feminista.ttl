@@ -1,0 +1,5 @@
+<sarahrubia.github.io/narrativa-almerinda/concept_transformacao-movimento-feminista> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Transformação do movimento feminista"@pt;
+    <http://www.w3.org/2004/02/skos/core#broader> <sarahrubia.github.io/narrativa-almerinda/concept_evolucao-movimento-feminista>;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <sarahrubia.github.io/narrativa-almerinda/narrative-ontology-concepts>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "Mudanças estruturais no movimento feminista através da incorporação de perspectivas interseccionais."@pt.

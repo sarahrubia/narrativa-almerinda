@@ -1,0 +1,17 @@
+<sarahrubia.github.io/narrativa-almerinda/event_votacao-constituinte-1933> <http://erlangen-crm.org/current/P175_starts_before_or_with_the_start_of> <sarahrubia.github.io/narrativa-almerinda/event_candidatura-1934>;
+    a <http://erlangen-crm.org/current/E7_Activity>, <https://dlnarratives.eu/ontology#Event>;
+    <https://dlnarratives.eu/ontology#partOfNarrative> <sarahrubia.github.io/narrativa-almerinda/narrative_almerinda>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Ato histórico de votação na bancada classista da Constituinte"@pt;
+    <https://dlnarratives.eu/ontology#hasDescription> "Momento histórico mais emblemático onde Almerinda foi a única representante feminina — e mulher negra — presente no processo decisório."@pt;
+    <http://erlangen-crm.org/current/P11_had_participant> <sarahrubia.github.io/narrativa-almerinda/person_almerinda-farias-gama>;
+    <http://erlangen-crm.org/current/P7_took_place_at> <sarahrubia.github.io/narrativa-almerinda/place_rio-de-janeiro-city>;
+    <http://erlangen-crm.org/current/P4_has_time-span> _:n3-12;
+    <https://dlnarratives.eu/ontology#hadParticipant> _:n3-13;
+    <sarahrubia.github.io/narrativa-almerinda/rompeu> <sarahrubia.github.io/narrativa-almerinda/concept_barreiras-de-genero-e-raca>;
+    <sarahrubia.github.io/narrativa-almerinda/constituiuSeComo> <sarahrubia.github.io/narrativa-almerinda/concept_unica-representante-feminina-negra>;
+    <sarahrubia.github.io/narrativa-almerinda/materializou> <sarahrubia.github.io/narrativa-almerinda/concept_pioneirismo-politico-negro-feminino>;
+    <sarahrubia.github.io/narrativa-almerinda/exerceu> <sarahrubia.github.io/narrativa-almerinda/concept_voto-historico-transformador>;
+    <http://erlangen-crm.org/current/P20_had_specific_purpose> <sarahrubia.github.io/narrativa-almerinda/concept_escolha-bancada-classista>;
+    <http://erlangen-crm.org/current/P21_had_general_purpose> <sarahrubia.github.io/narrativa-almerinda/concept_ruptura-barreiras-estruturais>;
+    <http://erlangen-crm.org/current/P67_refers_to> <sarahrubia.github.io/narrativa-almerinda/org_anc-1934>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "Ato político de significância excepcional modelado através de múltiplos verbos de agência para capturar seu impacto transformador na história política brasileira."@pt.

@@ -1,0 +1,6 @@
+<sarahrubia.github.io/narrativa-almerinda/event_morte-almerinda-1999> a <http://erlangen-crm.org/current/E69_Death>, <https://dlnarratives.eu/ontology#Event>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Morte de Almerinda Farias Gama em 31 de março de 1999"@pt;
+    <https://dlnarratives.eu/ontology#partOfNarrative> <sarahrubia.github.io/narrativa-almerinda/narrative_almerinda>;
+    <http://erlangen-crm.org/current/P100_was_death_of> <sarahrubia.github.io/narrativa-almerinda/person_almerinda-farias-gama>;
+    <http://erlangen-crm.org/current/P7_took_place_at> <sarahrubia.github.io/narrativa-almerinda/place_sao-paulo-city>, <sarahrubia.github.io/narrativa-almerinda/place_brasil>;
+    <http://erlangen-crm.org/current/P4_has_time-span> _:n3-2.

@@ -1,0 +1,9 @@
+<sarahrubia.github.io/narrativa-almerinda/event_nascimento-almerinda-1899> <http://erlangen-crm.org/current/P175_starts_before_or_with_the_start_of> <sarahrubia.github.io/narrativa-almerinda/event_mudanca-rio-1929>;
+    a <http://erlangen-crm.org/current/E67_Birth>, <https://dlnarratives.eu/ontology#Event>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Nascimento de Almerinda Farias Gama em 16 de maio de 1899"@pt;
+    <https://dlnarratives.eu/ontology#partOfNarrative> <sarahrubia.github.io/narrativa-almerinda/narrative_almerinda>;
+    <http://erlangen-crm.org/current/P98_brought_into_life> <sarahrubia.github.io/narrativa-almerinda/person_almerinda-farias-gama>;
+    <http://erlangen-crm.org/current/P7_took_place_at> <sarahrubia.github.io/narrativa-almerinda/place_maceio>, <sarahrubia.github.io/narrativa-almerinda/place_alagoas>, <sarahrubia.github.io/narrativa-almerinda/place_brasil>;
+    <http://erlangen-crm.org/current/P4_has_time-span> _:n3-1;
+    <sarahrubia.github.io/narrativa-almerinda/ocorreuDurante> <sarahrubia.github.io/narrativa-almerinda/periodo_pos_abolicao>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "Evento inicial da fábula, situando o nascimento no contexto pós-abolição brasileiro."@pt.

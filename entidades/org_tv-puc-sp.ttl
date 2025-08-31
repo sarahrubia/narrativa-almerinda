@@ -1,0 +1,4 @@
+<sarahrubia.github.io/narrativa-almerinda/org_tv-puc-sp> a <http://erlangen-crm.org/current/E74_Group>, <https://dlnarratives.eu/ontology#Actor>, <http://xmlns.com/foaf/0.1/Organization>, <http://schema.org/Organization>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "TV PUC-SP"@pt;
+    <http://schema.org/member> <sarahrubia.github.io/narrativa-almerinda/person_joel-zito-araujo>, <sarahrubia.github.io/narrativa-almerinda/person_angela-freitas>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "Setor de produção profissional audiovisual da PUC-SP, que pertence à Fundação São Paulo (mantenedora da PUC)."@pt.

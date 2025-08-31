@@ -1,0 +1,3 @@
+<sarahrubia.github.io/narrativa-almerinda/concept_direitos-trabalhadoras> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Direitos das trabalhadoras"@pt;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "Pauta central da atuação sindical de Almerinda, articulando gênero e classe."@pt.

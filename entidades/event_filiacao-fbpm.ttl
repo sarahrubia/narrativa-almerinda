@@ -1,0 +1,14 @@
+<sarahrubia.github.io/narrativa-almerinda/event_filiacao-fbpm> <http://erlangen-crm.org/current/P175_starts_before_or_with_the_start_of> <sarahrubia.github.io/narrativa-almerinda/event_congresso-feminista-1931>;
+    a <http://erlangen-crm.org/current/E85_Joining>, <https://dlnarratives.eu/ontology#Event>;
+    <https://dlnarratives.eu/ontology#partOfNarrative> <sarahrubia.github.io/narrativa-almerinda/narrative_almerinda>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Filiação transformadora à FBPM"@pt;
+    <https://dlnarratives.eu/ontology#causallyDependsOn> <sarahrubia.github.io/narrativa-almerinda/event_mudanca-rio-1929>;
+    <http://erlangen-crm.org/current/P144_joined_with> <sarahrubia.github.io/narrativa-almerinda/org_fbpm>;
+    <http://erlangen-crm.org/current/P4_has_time-span> _:n3-4;
+    <https://dlnarratives.eu/ontology#hadParticipant> _:n3-5;
+    <sarahrubia.github.io/narrativa-almerinda/introduziu> <sarahrubia.github.io/narrativa-almerinda/concept_perspectiva-mulher-negra-trabalhadora>;
+    <sarahrubia.github.io/narrativa-almerinda/trouxe> <sarahrubia.github.io/narrativa-almerinda/concept_visao-interseccional-para-movimento-branco>;
+    <sarahrubia.github.io/narrativa-almerinda/foiMotivadaPor> <sarahrubia.github.io/narrativa-almerinda/concept_emancipacao-feminina>;
+    <http://erlangen-crm.org/current/P21_had_general_purpose> <sarahrubia.github.io/narrativa-almerinda/concept_ampliacao-perspectiva-feminista>;
+    <http://erlangen-crm.org/current/P17_was_motivated_by> <sarahrubia.github.io/narrativa-almerinda/concept_necessidade-representacao-interseccional>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "Filiação modelada como ato transformador que introduz perspectiva interseccional no movimento feminista majoritariamente branco, demonstrando agência de mudança estrutural."@pt.
