@@ -1,3 +1,0 @@
-<sarahrubia.github.io/narrativa-almerinda/narrative-ontology-concepts> a <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
-    <http://www.w3.org/2000/01/rdf-schema#label> "Esquema de Conceitos da Ontologia de Narrativa"@pt;
-    <http://www.w3.org/2000/01/rdf-schema#comment> "Um esquema de conceitos para a narrativa de Almerinda Farias Gama, formalizando os conceitos, hierarquias e relações usadas para representar a trajetória e agência interseccional."@pt.

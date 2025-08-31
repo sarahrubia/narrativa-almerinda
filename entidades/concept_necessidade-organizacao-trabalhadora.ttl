@@ -1,4 +1,0 @@
-<sarahrubia.github.io/narrativa-almerinda/concept_necessidade-organizacao-trabalhadora> a <http://www.w3.org/2004/02/skos/core#Concept>;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "Necessidade de organização trabalhadora feminina"@pt;
-    <http://www.w3.org/2004/02/skos/core#broader> <sarahrubia.github.io/narrativa-almerinda/concept_direitos-trabalhadoras>;
-    <http://www.w3.org/2000/01/rdf-schema#comment> "Motivação específica para criação de organizações sindicais femininas."@pt.

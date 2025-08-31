@@ -1,2 +1,0 @@
-_:n3-0 a <http://erlangen-crm.org/current/E52_Time-Span>;
-    <http://www.w3.org/2000/01/rdf-schema#label> "1933-02-17 a 1943-09-22".

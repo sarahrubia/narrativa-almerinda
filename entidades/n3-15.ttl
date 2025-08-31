@@ -1,3 +1,0 @@
-_:n3-15 a <https://dlnarratives.eu/ontology#Outcome>;
-    <http://www.w3.org/2000/01/rdf-schema#label> "Não eleita mas legado consolidado"@pt;
-    <http://www.w3.org/2000/01/rdf-schema#comment> "Embora eleitoralmente não vitoriosa, consolidou legado histórico transformador"@pt.

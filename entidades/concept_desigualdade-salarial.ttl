@@ -1,5 +1,0 @@
-<sarahrubia.github.io/narrativa-almerinda/concept_desigualdade-salarial> a <http://www.w3.org/2004/02/skos/core#Concept>;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "Desigualdade salarial"@pt;
-    <http://www.w3.org/2000/01/rdf-schema#comment> "Discriminação econômica que motivou a migração de Almerinda para o Rio de Janeiro e sua luta sindical."@pt;
-    <http://www.w3.org/2004/02/skos/core#related> <sarahrubia.github.io/narrativa-almerinda/concept_combate-discriminacao-interseccional>;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <sarahrubia.github.io/narrativa-almerinda/narrative-ontology-concepts>.

@@ -1,2 +1,0 @@
-_:n3-9 a <https://dlnarratives.eu/ontology#Role>;
-    <http://www.w3.org/2000/01/rdf-schema#label> "Voz representante da população feminina invisibilizada"@pt.

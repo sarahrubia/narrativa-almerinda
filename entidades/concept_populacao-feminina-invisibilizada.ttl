@@ -1,7 +1,0 @@
-<sarahrubia.github.io/narrativa-almerinda/concept_populacao-feminina-invisibilizada> a <http://www.w3.org/2004/02/skos/core#Concept>;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "População feminina invisibilizada"@pt;
-    <http://www.w3.org/2000/01/rdf-schema#comment> "Parcela da população feminina representada por Almerinda no II Congresso Internacional Feminista."@pt;
-    a <http://www.w3.org/2004/02/skos/core#Concept>;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "População feminina invisibilizada"@pt;
-    <http://www.w3.org/2004/02/skos/core#broader> <sarahrubia.github.io/narrativa-almerinda/concept_grupos-marginalizados>;
-    <http://www.w3.org/2000/01/rdf-schema#comment> "Parcela da população feminina representada por Almerinda no congresso, especialmente mulheres negras e trabalhadoras."@pt.

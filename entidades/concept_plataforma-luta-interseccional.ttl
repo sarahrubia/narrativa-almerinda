@@ -1,6 +1,0 @@
-<sarahrubia.github.io/narrativa-almerinda/concept_plataforma-luta-interseccional> a <http://www.w3.org/2004/02/skos/core#Concept>;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "Plataforma para luta interseccional"@pt;
-    <http://www.w3.org/2004/02/skos/core#broader> <sarahrubia.github.io/narrativa-almerinda/concept_estrategias-organizativas>;
-    <http://www.w3.org/2000/01/rdf-schema#comment> "Objetivo da fundação sindical como base institucional para articular gênero, raça e classe."@pt;
-    <http://www.w3.org/2004/02/skos/core#related> <sarahrubia.github.io/narrativa-almerinda/concept_consolidacao-participacao-politica-negra-feminina>;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <sarahrubia.github.io/narrativa-almerinda/narrative-ontology-concepts>.

@@ -1,9 +1,0 @@
-<sarahrubia.github.io/narrativa-almerinda/digitalObject_recorte-escreva-se-a-historia> a <http://schema.org/DigitalDocument>, <http://erlangen-crm.org/current/E31_Document>;
-    <http://www.w3.org/2000/01/rdf-schema#label> "Recorte de jornal com o texto 'Escreva-se a história'"@pt;
-    <http://purl.org/dc/elements/1.1/source> "Fundação Getúlio Vargas - Coleção Almerinda Farias Gama";
-    <http://purl.org/dc/elements/1.1/creator> <sarahrubia.github.io/narrativa-almerinda/person_almerinda-farias-gama>;
-    <http://purl.org/dc/elements/1.1/date> "1975-12-14"^^<http://www.w3.org/2001/XMLSchema#date>;
-    <http://schema.org/url> <https://docvirt.com/docreader.net/DocReader.aspx?bib=AFG_D>;
-    <http://erlangen-crm.org/current/P70_documents> <sarahrubia.github.io/narrativa-almerinda/narrative_almerinda>;
-    <http://erlangen-crm.org/current/P67_refers_to> <sarahrubia.github.io/narrativa-almerinda/concept_movimento-sufragista>, <sarahrubia.github.io/narrativa-almerinda/org_fbpm>, <sarahrubia.github.io/narrativa-almerinda/person_bertha-lutz>;
-    <http://purl.org/dc/elements/1.1/rights> "Os direitos de uso devem ser verificados no repositório de origem (Fundação Getúlio Vargas)."@pt.

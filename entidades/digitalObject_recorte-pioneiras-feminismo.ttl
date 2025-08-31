@@ -1,8 +1,0 @@
-<sarahrubia.github.io/narrativa-almerinda/digitalObject_recorte-pioneiras-feminismo> a <http://schema.org/DigitalDocument>, <http://erlangen-crm.org/current/E31_Document>;
-    <http://www.w3.org/2000/01/rdf-schema#label> "Artigo sobre as pioneiras do feminismo no Brasil"@pt;
-    <http://purl.org/dc/elements/1.1/source> "Hemeroteca Digital - Jornal Walkyrias, agosto de 1934";
-    <http://purl.org/dc/elements/1.1/date> "1934-08"^^<http://www.w3.org/2001/XMLSchema#gYearMonth>;
-    <http://schema.org/url> <https://memoria.bn.gov.br/docreader/DocReader.aspx?bib=337234&pagfis=43>;
-    <http://erlangen-crm.org/current/P70_documents> <sarahrubia.github.io/narrativa-almerinda/narrative_almerinda>;
-    <http://erlangen-crm.org/current/P67_refers_to> <sarahrubia.github.io/narrativa-almerinda/concept_pioneirismo-politico>, <sarahrubia.github.io/narrativa-almerinda/concept_feminismo-negro>, <sarahrubia.github.io/narrativa-almerinda/person_almerinda-farias-gama>, <sarahrubia.github.io/narrativa-almerinda/person_bertha-lutz>, <sarahrubia.github.io/narrativa-almerinda/person_carmen-portinho>;
-    <http://purl.org/dc/elements/1.1/rights> "Material em domínio público ou com direitos de autor respeitados."@pt.

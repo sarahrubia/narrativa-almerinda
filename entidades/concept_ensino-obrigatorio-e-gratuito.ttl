@@ -1,3 +1,0 @@
-<sarahrubia.github.io/narrativa-almerinda/concept_ensino-obrigatorio-e-gratuito> a <http://www.w3.org/2004/02/skos/core#Concept>;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "Ensino obrigatório e gratuito"@pt;
-    <http://www.w3.org/2000/01/rdf-schema#comment> "Representa a defesa de Almerinda pelo ensino público e gratuito em todos os níveis, conforme mencionado em seu panfleto de campanha de 1934."@pt.

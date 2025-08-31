@@ -1,4 +1,0 @@
-<sarahrubia.github.io/narrativa-almerinda/concept_precedente-candidatura-negra-feminina> a <http://www.w3.org/2004/02/skos/core#Concept>;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "Precedente para candidaturas de mulheres negras"@pt;
-    <http://www.w3.org/2004/02/skos/core#broader> <sarahrubia.github.io/narrativa-almerinda/concept_marcos-historicos>;
-    <http://www.w3.org/2000/01/rdf-schema#comment> "Impacto específico da candidatura de Almerinda para futuras participações políticas."@pt.
