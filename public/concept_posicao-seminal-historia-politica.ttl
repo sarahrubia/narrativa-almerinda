@@ -1,0 +1,5 @@
+<https://sarahrubia.github.io/narrativa-almerinda/concept_posicao-seminal-historia-politica> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Posição seminal na história política brasileira"@pt;
+    <http://www.w3.org/2004/02/skos/core#broader> <https://sarahrubia.github.io/narrativa-almerinda/concept_pioneirismo-historico>;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://sarahrubia.github.io/narrativa-almerinda/almerinda-narrative-concepts>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "Status histórico de Almerinda como figura fundacional da participação política negra e feminina."@pt.

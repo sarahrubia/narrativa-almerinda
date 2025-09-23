@@ -1,0 +1,2 @@
+<https://sarahrubia.github.io/narrativa-almerinda/org_ministerio_publico_mg> a <http://www.w3.org/ns/prov#Agent>, <http://xmlns.com/foaf/0.1/Organization>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Ministério Público do Estado de Minas Gerais"@pt.

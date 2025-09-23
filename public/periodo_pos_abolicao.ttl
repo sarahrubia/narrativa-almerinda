@@ -1,0 +1,5 @@
+<https://sarahrubia.github.io/narrativa-almerinda/periodo_pos_abolicao> a <http://erlangen-crm.org/current/E4_Period>, <http://erlangen-crm.org/current/E52_Time-Span>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Período Pós-Abolição no Brasil"@pt;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "Um Brasil recém-emergido do sistema escravista, onde os espaços de poder político eram estruturalmente restritos através de barreiras interseccionais de gênero e raça."@pt;
+    <http://erlangen-crm.org/current/P81a_begins_with> "1888-05-13"^^<http://www.w3.org/2001/XMLSchema#date>;
+    <http://erlangen-crm.org/current/P129_is_about> <https://sarahrubia.github.io/narrativa-almerinda/person_almerinda-farias-gama>, <https://sarahrubia.github.io/narrativa-almerinda/concept_racismo>, <https://sarahrubia.github.io/narrativa-almerinda/concept_machismo>, <https://sarahrubia.github.io/narrativa-almerinda/concept_barreiras-de-genero-e-raca>.

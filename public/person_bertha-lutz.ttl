@@ -1,0 +1,4 @@
+<https://sarahrubia.github.io/narrativa-almerinda/person_bertha-lutz> a <http://erlangen-crm.org/current/E21_Person>, <https://dlnarratives.eu/ontology#Actor>, <http://xmlns.com/foaf/0.1/Person>, <http://schema.org/Person>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Bertha Lutz"@pt;
+    <http://www.w3.org/2002/07/owl#sameAs> <https://www.wikidata.org/wiki/Q1264246>;
+    <http://xmlns.com/foaf/0.1/name> "Bertha Lutz"@pt.

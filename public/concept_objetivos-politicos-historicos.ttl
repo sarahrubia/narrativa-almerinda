@@ -1,0 +1,5 @@
+<https://sarahrubia.github.io/narrativa-almerinda/concept_objetivos-politicos-historicos> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Objetivos políticos históricos"@pt;
+    <http://www.w3.org/2004/02/skos/core#broader> <https://sarahrubia.github.io/narrativa-almerinda/concept_estrategias-organizativas>;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://sarahrubia.github.io/narrativa-almerinda/almerinda-narrative-concepts>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "Metas de longo prazo que orientam ações políticas transformadoras."@pt.

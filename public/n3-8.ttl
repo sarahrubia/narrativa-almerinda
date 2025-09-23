@@ -1,0 +1,3 @@
+_:n3-8 a <https://dlnarratives.eu/ontology#ActorWithRole>;
+    <https://dlnarratives.eu/ontology#hasSubject> <https://sarahrubia.github.io/narrativa-almerinda/person_almerinda-farias-gama>;
+    <https://dlnarratives.eu/ontology#hasRole> _:n3-9.

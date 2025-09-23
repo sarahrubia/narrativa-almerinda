@@ -1,0 +1,10 @@
+<https://sarahrubia.github.io/narrativa-almerinda/digitalObject_serie-feministas> a <http://schema.org/DigitalDocument>, <http://erlangen-crm.org/current/E31_Document>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Série 'Feministas, graças a Deus' VII – Almerinda Farias Gama (1899 – 1999), uma das pioneiras do feminismo no Brasil"@pt;
+    <http://purl.org/dc/elements/1.1/creator> "Andrea C. T. Wanderley"@pt;
+    <http://purl.org/dc/elements/1.1/date> "2021-02-23"^^<http://www.w3.org/2001/XMLSchema#date>;
+    <http://schema.org/url> <https://brasilianafotografica.bn.gov.br/?p=22708>;
+    <http://purl.org/dc/elements/1.1/source> "Portal Brasiliana Fotográfica";
+    <http://erlangen-crm.org/current/P70_documents> <https://sarahrubia.github.io/narrativa-almerinda/narrative_almerinda>;
+    <http://erlangen-crm.org/current/P67_refers_to> <https://sarahrubia.github.io/narrativa-almerinda/person_almerinda-farias-gama>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "Artigo que serviu como uma das fontes para a construção da narrativa biográfica de Almerinda Farias Gama."@pt;
+    <http://erlangen-crm.org/current/P67_refers_to> <https://sarahrubia.github.io/narrativa-almerinda/digitalObject_serie-feministas>.

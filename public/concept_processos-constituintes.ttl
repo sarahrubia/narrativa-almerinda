@@ -1,0 +1,4 @@
+<https://sarahrubia.github.io/narrativa-almerinda/concept_processos-constituintes> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Processos constituintes"@pt;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://sarahrubia.github.io/narrativa-almerinda/almerinda-narrative-concepts>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "Processos de elaboração e definição de estruturas político-legais fundamentais."@pt.

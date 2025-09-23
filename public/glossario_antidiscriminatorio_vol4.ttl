@@ -1,0 +1,4 @@
+<https://sarahrubia.github.io/narrativa-almerinda/glossario_antidiscriminatorio_vol4> a <http://schema.org/CreativeWork>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Glossário Antidiscriminatório: vol.4 Equidade de gênero e o combate à violência doméstica"@pt;
+    <http://purl.org/dc/elements/1.1/creator> <https://sarahrubia.github.io/narrativa-almerinda/org_ministerio_publico_mg>;
+    <http://purl.org/dc/elements/1.1/date> "2023"^^<http://www.w3.org/2001/XMLSchema#gYear>.

@@ -1,0 +1,5 @@
+<https://sarahrubia.github.io/narrativa-almerinda/concept_representacao-politica> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Representação política"@pt;
+    <http://www.w3.org/2004/02/skos/core#broader> <https://sarahrubia.github.io/narrativa-almerinda/concept_participacao-politica-qualificada>;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://sarahrubia.github.io/narrativa-almerinda/almerinda-narrative-concepts>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "Ação de dar voz política a grupos ou perspectivas específicas."@pt.

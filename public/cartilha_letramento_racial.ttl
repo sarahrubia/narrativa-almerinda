@@ -1,0 +1,4 @@
+<https://sarahrubia.github.io/narrativa-almerinda/cartilha_letramento_racial> a <http://schema.org/CreativeWork>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Cartilha Educativa Pequeno Glossário de LETRAMENTO RACIAL para trabalhadores e trabalhadoras da Secretaria da Cultura do Ceará"@pt;
+    <http://purl.org/dc/elements/1.1/creator> <https://sarahrubia.github.io/narrativa-almerinda/org_secretaria-cultura-ceara>;
+    <http://www.w3.org/ns/prov#wasAttributedTo> <https://sarahrubia.github.io/narrativa-almerinda/org_secretaria-igualdade-racial-ceara>.

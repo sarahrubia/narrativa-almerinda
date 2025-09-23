@@ -1,0 +1,4 @@
+<https://sarahrubia.github.io/narrativa-almerinda/concept_impacto-historico> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Impacto histórico"@pt;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://sarahrubia.github.io/narrativa-almerinda/almerinda-narrative-concepts>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "Conceito de nível superior para consequências duradouras de ações históricas."@pt.

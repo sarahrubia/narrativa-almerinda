@@ -1,0 +1,3 @@
+<https://sarahrubia.github.io/narrativa-almerinda/introduziu> a <http://www.w3.org/2002/07/owl#ObjectProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "introduziu"@pt;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "Representa a ação de trazer novas perspectivas ou elementos para contextos existentes, especialmente relevante para agência de grupos marginalizados."@pt.

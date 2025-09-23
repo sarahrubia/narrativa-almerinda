@@ -1,0 +1,3 @@
+<https://sarahrubia.github.io/narrativa-almerinda/operouComo> a <http://www.w3.org/2002/07/owl#ObjectProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "operou como"@pt;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "Verbo para descrever funcionamento ou atuação em contextos específicos."@pt.

@@ -1,0 +1,6 @@
+<https://sarahrubia.github.io/narrativa-almerinda/concept_interseccionalidade-genero-raca-classe> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Interseccionalidade gênero-raça-classe"@pt;
+    <http://www.w3.org/2004/02/skos/core#broader> <https://sarahrubia.github.io/narrativa-almerinda/concept_feminismo-negro>;
+    <http://www.w3.org/2004/02/skos/core#narrower> <https://sarahrubia.github.io/narrativa-almerinda/concept_perspectiva-mulher-negra-trabalhadora>;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://sarahrubia.github.io/narrativa-almerinda/almerinda-narrative-concepts>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "Conceito específico para a articulação simultânea das três dimensões identitárias centrais na trajetória de Almerinda."@pt.

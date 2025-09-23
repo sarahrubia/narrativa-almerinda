@@ -1,0 +1,3 @@
+<https://sarahrubia.github.io/narrativa-almerinda/role_delegada-sindical> a <https://dlnarratives.eu/ontology#Role>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "delegada sindical"@pt;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "Papel específico que permitiu sua participação histórica na votação da bancada classista para a Constituinte."@pt.

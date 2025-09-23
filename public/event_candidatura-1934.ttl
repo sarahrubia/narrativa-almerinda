@@ -1,0 +1,14 @@
+<https://sarahrubia.github.io/narrativa-almerinda/event_candidatura-1934> <http://erlangen-crm.org/current/P175_starts_before_or_with_the_start_of> <https://sarahrubia.github.io/narrativa-almerinda/event_morte-almerinda-1999>;
+    a <http://erlangen-crm.org/current/E7_Activity>, <https://dlnarratives.eu/ontology#Event>;
+    <https://dlnarratives.eu/ontology#partOfNarrative> <https://sarahrubia.github.io/narrativa-almerinda/narrative_almerinda>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Candidatura política pioneira de 1934"@pt;
+    <http://erlangen-crm.org/current/P14_carried_out_by> <https://sarahrubia.github.io/narrativa-almerinda/person_almerinda-farias-gama>;
+    <https://dlnarratives.eu/ontology#causallyDependsOn> <https://sarahrubia.github.io/narrativa-almerinda/event_votacao-constituinte-1933>;
+    <http://erlangen-crm.org/current/P4_has_time-span> _:n3-14;
+    <http://erlangen-crm.org/current/P11_had_participant> <https://sarahrubia.github.io/narrativa-almerinda/person_almerinda-farias-gama>;
+    <https://sarahrubia.github.io/narrativa-almerinda/consolidou> <https://sarahrubia.github.io/narrativa-almerinda/concept_legado-transformador>;
+    <https://sarahrubia.github.io/narrativa-almerinda/reforçou> <https://sarahrubia.github.io/narrativa-almerinda/concept_posicao-seminal-historia-politica>;
+    <https://sarahrubia.github.io/narrativa-almerinda/estabeleceu> <https://sarahrubia.github.io/narrativa-almerinda/concept_precedente-candidatura-negra-feminina>;
+    <http://erlangen-crm.org/current/P123_resulted_in> <https://sarahrubia.github.io/narrativa-almerinda/concept_consolidacao-participacao-politica-negra-feminina>;
+    <https://dlnarratives.eu/ontology#hadResult> _:n3-15;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "Candidatura modelada como ato de consolidação histórica, transcendendo resultado eleitoral para estabelecer precedente transformador."@pt.

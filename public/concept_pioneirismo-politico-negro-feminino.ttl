@@ -1,0 +1,6 @@
+<https://sarahrubia.github.io/narrativa-almerinda/concept_pioneirismo-politico-negro-feminino> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Pioneirismo Político Negro Feminino"@pt;
+    <http://www.w3.org/2004/02/skos/core#broader> <https://sarahrubia.github.io/narrativa-almerinda/concept_pioneirismo-politico>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "Conceito específico para capturar a singularidade histórica da participação política de mulheres negras no Brasil pós-abolição."@pt;
+    <http://www.w3.org/2004/02/skos/core#related> <https://sarahrubia.github.io/narrativa-almerinda/concept_ruptura-barreiras-estruturais>;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://sarahrubia.github.io/narrativa-almerinda/almerinda-narrative-concepts>.

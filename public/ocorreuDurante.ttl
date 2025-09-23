@@ -1,0 +1,5 @@
+<https://sarahrubia.github.io/narrativa-almerinda/ocorreuDurante> a <http://www.w3.org/2002/07/owl#ObjectProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "ocorreu durante"@pt;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "Verbo especializado para indicar que um evento ocorreu dentro de um período ou intervalo de tempo histórico mais amplo, estabelecendo uma relação de contenção temporal."@pt;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://erlangen-crm.org/current/E5_Event>;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://erlangen-crm.org/current/E52_Time-Span>.

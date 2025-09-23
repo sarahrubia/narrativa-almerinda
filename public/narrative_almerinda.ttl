@@ -1,0 +1,7 @@
+<https://sarahrubia.github.io/narrativa-almerinda/narrative_almerinda> a <https://dlnarratives.eu/ontology#Biography>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Biografia de Almerinda Farias Gama"@pt;
+    <https://dlnarratives.eu/ontology#hasText> <https://sarahrubia.github.io/narrativa-almerinda/narration_almerinda_texto>;
+    <https://dlnarratives.eu/ontology#hasFabula> <https://sarahrubia.github.io/narrativa-almerinda/fabula_vida-de-almerinda>;
+    <http://purl.org/dc/elements/1.1/subject> <https://sarahrubia.github.io/narrativa-almerinda/concept_feminismo-negro>, <https://sarahrubia.github.io/narrativa-almerinda/concept_pioneirismo-politico-negro-feminino>;
+    <http://erlangen-crm.org/current/P70i_is_documented_in> <https://sarahrubia.github.io/narrativa-almerinda/digitalObject_panfleto-1934>, <https://sarahrubia.github.io/narrativa-almerinda/digitalObject_foto-congresso-1931>, <https://sarahrubia.github.io/narrativa-almerinda/digitalObject_recorte-reconhecimento-sindicato>, <https://sarahrubia.github.io/narrativa-almerinda/digitalObject_recorte-votacao-classista>, <https://sarahrubia.github.io/narrativa-almerinda/digitalObject_recorte-pioneiras-feminismo>, <https://sarahrubia.github.io/narrativa-almerinda/digitalObject_serie-feministas>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "Narrativa construída como produto epistêmico da pesquisa, utilizando a identidade interseccional de Almerinda como lente interpretativa central, conforme metodologia de curadoria digital socializada."@pt.

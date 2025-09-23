@@ -1,0 +1,13 @@
+<https://sarahrubia.github.io/narrativa-almerinda/event_congresso-feminista-1931> <http://erlangen-crm.org/current/P175_starts_before_or_with_the_start_of> <https://sarahrubia.github.io/narrativa-almerinda/event_fundacao-sindicato>;
+    a <http://erlangen-crm.org/current/E7_Activity>, <https://dlnarratives.eu/ontology#Event>;
+    <https://dlnarratives.eu/ontology#partOfNarrative> <https://sarahrubia.github.io/narrativa-almerinda/narrative_almerinda>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Participação no II Congresso Internacional Feminista"@pt;
+    <http://erlangen-crm.org/current/P7_took_place_at> <http://dbpedia.org/resource/Rio_de_Janeiro>;
+    <http://erlangen-crm.org/current/P4_has_time-span> _:n3-7;
+    <http://erlangen-crm.org/current/P11_had_participant> <https://sarahrubia.github.io/narrativa-almerinda/person_almerinda-farias-gama>;
+    <https://dlnarratives.eu/ontology#hadParticipant> _:n3-8;
+    <https://sarahrubia.github.io/narrativa-almerinda/representou> <https://sarahrubia.github.io/narrativa-almerinda/concept_populacao-feminina-invisibilizada>;
+    <https://sarahrubia.github.io/narrativa-almerinda/transcendeu> <https://sarahrubia.github.io/narrativa-almerinda/concept_papel-congressista-convencional>;
+    <https://sarahrubia.github.io/narrativa-almerinda/constituiuSeComo> <https://sarahrubia.github.io/narrativa-almerinda/concept_voz-representativa-marginalizada>;
+    <http://erlangen-crm.org/current/P21_had_general_purpose> <https://sarahrubia.github.io/narrativa-almerinda/concept_representacao-interseccional-congresso>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "Participação qualificada que transcende presença factual, constituindo-se como representação de parcela estruturalmente invisibilizada, conforme padrão nont:ActorWithRole."@pt.

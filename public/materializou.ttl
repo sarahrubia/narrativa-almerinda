@@ -1,0 +1,3 @@
+<https://sarahrubia.github.io/narrativa-almerinda/materializou> a <http://www.w3.org/2002/07/owl#ObjectProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "materializou"@pt;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "Verbo para ações que tornam conceitos abstratos em realidade concreta."@pt.
