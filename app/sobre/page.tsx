@@ -149,8 +149,8 @@ export default function SobrePage() {
                 <p className="text-slate-800 font-mono text-sm leading-relaxed">
                   SANTOS, S. R. O. de.{" "}
                   <strong>
-                    Desafios semânticos na representação digital de entidades interseccionais: modelagem ontológica de Almerinda Farias Gama.
-                  </strong> 2025. 275 f. Tese (Doutorado em Gestão e Organização do Conhecimento) - Escola de Ciência da Informação, Universidade Federal de Minas Gerais, Belo Horizonte, 2025. Disponível em: https://github.com/sarahrubia/tese. 
+                    Desafios semânticos na integração de acervos do Patrimônio Cultural: a modelagem ontológica da narrativa digital de Almerinda Farias Gama.
+                  </strong> 2025. 335 f. Tese (Doutorado em Gestão e Organização do Conhecimento) - Escola de Ciência da Informação, Universidade Federal de Minas Gerais, Belo Horizonte, 2025. 
                   {/* Acesso em:{" "}
                   {new Date().toLocaleDateString("pt-BR", {
                     day: "2-digit",
