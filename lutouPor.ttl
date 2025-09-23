@@ -1,3 +1,3 @@
-<sarahrubia.github.io/narrativa-almerinda/lutouPor> a <http://www.w3.org/2002/07/owl#ObjectProperty>;
+<https://sarahrubia.github.io/narrativa-almerinda/lutouPor> a <http://www.w3.org/2002/07/owl#ObjectProperty>;
     <http://www.w3.org/2000/01/rdf-schema#label> "lutou por"@pt;
     <http://www.w3.org/2000/01/rdf-schema#comment> "Verbo de agência criado para formalizar a natureza ativa e intencional do ativismo político, superando limitações de propriedades genéricas como schema:about."@pt.

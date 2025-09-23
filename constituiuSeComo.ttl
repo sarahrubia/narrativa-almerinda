@@ -1,3 +1,3 @@
-<sarahrubia.github.io/narrativa-almerinda/constituiuSeComo> a <http://www.w3.org/2002/07/owl#ObjectProperty>;
+<https://sarahrubia.github.io/narrativa-almerinda/constituiuSeComo> a <http://www.w3.org/2002/07/owl#ObjectProperty>;
     <http://www.w3.org/2000/01/rdf-schema#label> "constituiu-se como"@pt;
     <http://www.w3.org/2000/01/rdf-schema#comment> "Verbo para transformação identitária ou assumir novos papéis."@pt.

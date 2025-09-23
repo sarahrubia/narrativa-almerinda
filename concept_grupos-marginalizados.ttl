@@ -1,4 +1,4 @@
-<sarahrubia.github.io/narrativa-almerinda/concept_grupos-marginalizados> a <http://www.w3.org/2004/02/skos/core#Concept>;
+<https://sarahrubia.github.io/narrativa-almerinda/concept_grupos-marginalizados> a <http://www.w3.org/2004/02/skos/core#Concept>;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Grupos marginalizados"@pt;
-    <http://www.w3.org/2004/02/skos/core#topConceptOf> <sarahrubia.github.io/narrativa-almerinda/narrative-ontology-concepts>;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://sarahrubia.github.io/narrativa-almerinda/almerinda-narrative-concepts>;
     <http://www.w3.org/2000/01/rdf-schema#comment> "Conceito para populações estruturalmente excluídas dos espaços de poder."@pt.

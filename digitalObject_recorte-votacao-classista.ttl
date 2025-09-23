@@ -1,9 +1,9 @@
-<sarahrubia.github.io/narrativa-almerinda/digitalObject_recorte-votacao-classista> a <http://schema.org/DigitalDocument>, <http://erlangen-crm.org/current/E31_Document>;
+<https://sarahrubia.github.io/narrativa-almerinda/digitalObject_recorte-votacao-classista> a <http://schema.org/DigitalDocument>, <http://erlangen-crm.org/current/E31_Document>;
     <http://www.w3.org/2000/01/rdf-schema#label> "Votação na escolha da bancada classista para a Constituinte de 1934"@pt;
     <http://purl.org/dc/elements/1.1/source> "Hemeroteca Digital - Jornal Diario da Noite, 20/07/1933";
     <http://purl.org/dc/elements/1.1/date> "1933-07-20"^^<http://www.w3.org/2001/XMLSchema#date>;
     <http://schema.org/url> <https://memoria.bn.gov.br/docreader/DocReader.aspx?bib=221961_01&pagfis=14944>;
-    <http://erlangen-crm.org/current/P70_documents> <sarahrubia.github.io/narrativa-almerinda/event_votacao-constituinte-1933>, <sarahrubia.github.io/narrativa-almerinda/narrative_almerinda>;
-    <http://erlangen-crm.org/current/P129_is_about> <sarahrubia.github.io/narrativa-almerinda/person_almerinda-farias-gama>, <sarahrubia.github.io/narrativa-almerinda/concept_barreiras-de-genero-e-raca>;
+    <http://erlangen-crm.org/current/P70_documents> <https://sarahrubia.github.io/narrativa-almerinda/event_votacao-constituinte-1933>, <https://sarahrubia.github.io/narrativa-almerinda/narrative_almerinda>;
+    <http://erlangen-crm.org/current/P129_is_about> <https://sarahrubia.github.io/narrativa-almerinda/person_almerinda-farias-gama>, <https://sarahrubia.github.io/narrativa-almerinda/concept_barreiras-de-genero-e-raca>;
     <http://purl.org/dc/elements/1.1/rights> "Material em domínio público ou com direitos de autor respeitados."@pt;
     <http://www.w3.org/2000/01/rdf-schema#comment> "Documento que registra o ato histórico onde Almerinda foi 'a única representante feminina — e, notavelmente, uma mulher negra — presente'."@pt.

@@ -1,8 +1,8 @@
-<sarahrubia.github.io/narrativa-almerinda/digitalObject_podcast-radiocamara> a <http://schema.org/AudioObject>, <http://erlangen-crm.org/current/E31_Document>;
+<https://sarahrubia.github.io/narrativa-almerinda/digitalObject_podcast-radiocamara> a <http://schema.org/AudioObject>, <http://erlangen-crm.org/current/E31_Document>;
     <http://www.w3.org/2000/01/rdf-schema#label> "Mulheres de Palavra: A história de Almerinda"@pt;
     <http://purl.org/dc/elements/1.1/source> "Rádio Câmara - Portal da Câmara dos Deputados"@pt;
     <http://purl.org/dc/elements/1.1/creator> "Cristiane Baker", "Lucélia Cristina", "Marcelo Larcher", "Antônio Vital", "Vera Morgado"@pt;
     <http://purl.org/dc/elements/1.1/description> "Programa que apresenta a história de Almerinda Farias Gama, uma das líderes na luta das mulheres pelo direito ao voto, cuja contribuição histórica é pouco lembrada."@pt;
     <http://schema.org/url> <https://www.camara.leg.br/radio/programas/mulheres-de-palavra/1067263-a-historia-de-almerinda/>;
-    <http://erlangen-crm.org/current/P129_is_about> <sarahrubia.github.io/narrativa-almerinda/person_almerinda-farias-gama>, <sarahrubia.github.io/narrativa-almerinda/concept_sufragio-feminino>, <sarahrubia.github.io/narrativa-almerinda/concept_pioneirismo-politico-negro-feminino>;
+    <http://erlangen-crm.org/current/P129_is_about> <https://sarahrubia.github.io/narrativa-almerinda/person_almerinda-farias-gama>, <https://sarahrubia.github.io/narrativa-almerinda/concept_sufragio-feminino>, <https://sarahrubia.github.io/narrativa-almerinda/concept_pioneirismo-politico-negro-feminino>;
     <http://www.w3.org/2000/01/rdf-schema#comment> "Podcast que serviu como fonte para a construção da narrativa."@pt.

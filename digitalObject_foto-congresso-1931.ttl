@@ -1,12 +1,12 @@
-<sarahrubia.github.io/narrativa-almerinda/digitalObject_foto-congresso-1931> a <http://schema.org/ImageObject>, <http://erlangen-crm.org/current/E38_Image>;
+<https://sarahrubia.github.io/narrativa-almerinda/digitalObject_foto-congresso-1931> a <http://schema.org/ImageObject>, <http://erlangen-crm.org/current/E38_Image>;
     <http://www.w3.org/2000/01/rdf-schema#label> "Excursão das participantes do II Congresso Internacional Feminista"@pt;
     <http://purl.org/dc/elements/1.1/source> "Arquivo Nacional - Brasiliana Fotográfica", "Federação Brasileira pelo Progresso Feminino";
     <http://purl.org/dc/elements/1.1/date> "1931-06"^^<http://www.w3.org/2001/XMLSchema#gYearMonth>;
     <http://schema.org/url> <https://brasilianafotografica.bn.gov.br/brasiliana/handle/20.500.12156.1/5028>;
-    <http://erlangen-crm.org/current/P70_documents> <sarahrubia.github.io/narrativa-almerinda/narrative_almerinda>, <sarahrubia.github.io/narrativa-almerinda/event_congresso-feminista-1931>;
-    <http://erlangen-crm.org/current/P138_represents> <sarahrubia.github.io/narrativa-almerinda/event_congresso-feminista-1931>;
-    <http://erlangen-crm.org/current/P129_is_about> <sarahrubia.github.io/narrativa-almerinda/concept_feminismo-negro>;
+    <http://erlangen-crm.org/current/P70_documents> <https://sarahrubia.github.io/narrativa-almerinda/narrative_almerinda>, <https://sarahrubia.github.io/narrativa-almerinda/event_congresso-feminista-1931>;
+    <http://erlangen-crm.org/current/P138_represents> <https://sarahrubia.github.io/narrativa-almerinda/event_congresso-feminista-1931>;
+    <http://erlangen-crm.org/current/P129_is_about> <https://sarahrubia.github.io/narrativa-almerinda/concept_feminismo-negro>;
     <http://schema.org/license> <http://creativecommons.org/publicdomain/mark/1.0/>;
     <http://purl.org/dc/elements/1.1/rights> "Esta imagem é de domínio público."@pt;
-    <http://xmlns.com/foaf/0.1/depicts> <sarahrubia.github.io/narrativa-almerinda/person_almerinda-farias-gama>, <sarahrubia.github.io/narrativa-almerinda/person_bertha-lutz>, <sarahrubia.github.io/narrativa-almerinda/person_carmen-portinho>;
+    <http://xmlns.com/foaf/0.1/depicts> <https://sarahrubia.github.io/narrativa-almerinda/person_almerinda-farias-gama>, <https://sarahrubia.github.io/narrativa-almerinda/person_bertha-lutz>, <https://sarahrubia.github.io/narrativa-almerinda/person_carmen-portinho>;
     <http://www.w3.org/2000/01/rdf-schema#comment> "Registro visual que documenta a participação de Almerinda como 'voz representante da população feminina invisibilizada'."@pt.

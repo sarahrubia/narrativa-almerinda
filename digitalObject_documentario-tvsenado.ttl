@@ -1,7 +1,7 @@
-<sarahrubia.github.io/narrativa-almerinda/digitalObject_documentario-tvsenado> a <http://schema.org/VideoObject>, <http://erlangen-crm.org/current/E38_Image>, <http://erlangen-crm.org/current/E31_Document>;
+<https://sarahrubia.github.io/narrativa-almerinda/digitalObject_documentario-tvsenado> a <http://schema.org/VideoObject>, <http://erlangen-crm.org/current/E38_Image>, <http://erlangen-crm.org/current/E31_Document>;
     <http://www.w3.org/2000/01/rdf-schema#label> "Conheça a história de Almerinda Gama, sindicalista negra que lutou pelo direito ao voto feminino"@pt;
     <http://purl.org/dc/elements/1.1/source> "TV Senado"@pt;
     <http://purl.org/dc/elements/1.1/description> "Documentário sobre Almerinda Farias Gama, que lutou pelo direito ao voto feminino e foi a única mulher a votar como delegada na eleição para a Assembleia Nacional Constituinte em 1933."@pt;
     <http://schema.org/url> <https://www.youtube.com/watch?v=Uu5ycrkt5jU>;
-    <http://erlangen-crm.org/current/P129_is_about> <sarahrubia.github.io/narrativa-almerinda/person_almerinda-farias-gama>, <sarahrubia.github.io/narrativa-almerinda/role_sindicalista>, <sarahrubia.github.io/narrativa-almerinda/concept_sufragio-feminino>, <sarahrubia.github.io/narrativa-almerinda/event_votacao-constituinte-1933>;
+    <http://erlangen-crm.org/current/P129_is_about> <https://sarahrubia.github.io/narrativa-almerinda/person_almerinda-farias-gama>, <https://sarahrubia.github.io/narrativa-almerinda/role_sindicalista>, <https://sarahrubia.github.io/narrativa-almerinda/concept_sufragio-feminino>, <https://sarahrubia.github.io/narrativa-almerinda/event_votacao-constituinte-1933>;
     <http://www.w3.org/2000/01/rdf-schema#comment> "Documentário que serviu como fonte para a construção da narrativa."@pt.

@@ -1,3 +1,3 @@
-<sarahrubia.github.io/narrativa-almerinda/role_candidata> a <https://dlnarratives.eu/ontology#Role>;
+<https://sarahrubia.github.io/narrativa-almerinda/role_candidata> a <https://dlnarratives.eu/ontology#Role>;
     <http://www.w3.org/2000/01/rdf-schema#label> "candidata"@pt;
     <http://www.w3.org/2000/01/rdf-schema#comment> "Papel político pioneiro como uma das primeiras mulheres negras a se candidatar no Brasil."@pt.

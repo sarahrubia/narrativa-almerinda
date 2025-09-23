@@ -1,8 +1,8 @@
-<sarahrubia.github.io/narrativa-almerinda/digitalObject_documentario-tvpuc> a <http://schema.org/VideoObject>, <http://erlangen-crm.org/current/E38_Image>, <http://erlangen-crm.org/current/E31_Document>;
+<https://sarahrubia.github.io/narrativa-almerinda/digitalObject_documentario-tvpuc> a <http://schema.org/VideoObject>, <http://erlangen-crm.org/current/E38_Image>, <http://erlangen-crm.org/current/E31_Document>;
     <http://www.w3.org/2000/01/rdf-schema#label> "Almerinda, uma mulher de trinta"@pt;
     <http://purl.org/dc/elements/1.1/source> "TV PUC-SP"@pt;
     <http://purl.org/dc/elements/1.1/creator> "Joel Zito Araujo", "Ângela Freitas"@pt;
     <http://purl.org/dc/elements/1.1/description> "Resgate da história de vida da militante feminista dos anos 30, Almerinda Farias Gama. Participante da luta pelo direito de voto da mulher na Constituinte de 1934, e ativista da Federação Brasileira pelo Progresso Feminino, junto a Bertha Lutz."@pt;
     <http://schema.org/url> <https://www.youtube.com/watch?v=_9jfbUM_zGQ>;
-    <http://erlangen-crm.org/current/P129_is_about> <sarahrubia.github.io/narrativa-almerinda/person_almerinda-farias-gama>, <sarahrubia.github.io/narrativa-almerinda/person_bertha-lutz>, <sarahrubia.github.io/narrativa-almerinda/org_fbpm>, <sarahrubia.github.io/narrativa-almerinda/concept_sufragio-feminino>, <sarahrubia.github.io/narrativa-almerinda/event_votacao-constituinte-1933>;
+    <http://erlangen-crm.org/current/P129_is_about> <https://sarahrubia.github.io/narrativa-almerinda/person_almerinda-farias-gama>, <https://sarahrubia.github.io/narrativa-almerinda/person_bertha-lutz>, <https://sarahrubia.github.io/narrativa-almerinda/org_fbpm>, <https://sarahrubia.github.io/narrativa-almerinda/concept_sufragio-feminino>, <https://sarahrubia.github.io/narrativa-almerinda/event_votacao-constituinte-1933>;
     <http://www.w3.org/2000/01/rdf-schema#comment> "Documentário que serviu como fonte para a construção da narrativa."@pt.

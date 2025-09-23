@@ -1,3 +1,3 @@
-<sarahrubia.github.io/narrativa-almerinda/exerceu> a <http://www.w3.org/2002/07/owl#ObjectProperty>;
+<https://sarahrubia.github.io/narrativa-almerinda/exerceu> a <http://www.w3.org/2002/07/owl#ObjectProperty>;
     <http://www.w3.org/2000/01/rdf-schema#label> "exerceu"@pt;
     <http://www.w3.org/2000/01/rdf-schema#comment> "Verbo para o desempenho ativo de funções, direitos ou poderes específicos."@pt.

@@ -1,3 +1,3 @@
-<sarahrubia.github.io/narrativa-almerinda/person_benigno-farias-gama> a <http://erlangen-crm.org/current/E21_Person>, <http://xmlns.com/foaf/0.1/Person>;
+<https://sarahrubia.github.io/narrativa-almerinda/person_benigno-farias-gama> a <http://erlangen-crm.org/current/E21_Person>, <http://xmlns.com/foaf/0.1/Person>;
     <http://www.w3.org/2000/01/rdf-schema#label> "Benigno Farias Gama"@pt;
     <http://xmlns.com/foaf/0.1/name> "Benigno Farias Gama"@pt.

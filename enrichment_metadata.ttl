@@ -1,4 +1,4 @@
-<sarahrubia.github.io/narrativa-almerinda/enrichment_metadata> a <http://www.w3.org/2002/07/owl#Ontology>;
+<https://sarahrubia.github.io/narrativa-almerinda/enrichment_metadata> a <http://www.w3.org/2002/07/owl#Ontology>;
     <http://www.w3.org/2000/01/rdf-schema#label> "Metodologia de Enriquecimento Semântico para Narrativas Interseccionais"@pt;
     <http://purl.org/dc/elements/1.1/creator> "Sarah Rúbia de Oliveira Santos";
     <http://purl.org/dc/elements/1.1/date> "2025";

@@ -1,4 +1,5 @@
-<sarahrubia.github.io/narrativa-almerinda/concept_racismo> a <http://www.w3.org/2004/02/skos/core#Concept>;
+<https://sarahrubia.github.io/narrativa-almerinda/concept_racismo> a <http://www.w3.org/2004/02/skos/core#Concept>;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Racismo"@pt;
-    <http://www.w3.org/2004/02/skos/core#definition> <sarahrubia.github.io/narrativa-almerinda/definicao_racismo>;
+    <http://www.w3.org/2004/02/skos/core#definition> <https://sarahrubia.github.io/narrativa-almerinda/definicao_racismo>;
+    <http://www.w3.org/2004/02/skos/core#broader> <http://dbpedia.org/resource/Category:Race_in_Brazil>;
     <http://www.w3.org/2000/01/rdf-schema#comment> "Estrutura de opressão sistematicamente combatida por Almerinda através de sua agência política."@pt.

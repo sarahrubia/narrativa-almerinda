@@ -1,3 +1,3 @@
-<sarahrubia.github.io/narrativa-almerinda/definicao_racismo> a <http://www.w3.org/2004/02/skos/core#Concept>;
+<https://sarahrubia.github.io/narrativa-almerinda/definicao_racismo> a <http://www.w3.org/2004/02/skos/core#Concept>;
     <http://www.w3.org/2004/02/skos/core#definition> "O Racismo é o elemento da opressão sistematizada de determinada raça e etnia ou de uma forma de existência específica. Ocorre por meio do preconceito e da exclusão social de pessoas com base na cor de sua pele ou origem étnica. O racismo no Brasil é praticado contra pessoas pretas e pardas (população negra de acordo com o IBGE) e contra a população indígena, quilombola e cigana."@pt;
-    <http://purl.org/dc/elements/1.1/source> <sarahrubia.github.io/narrativa-almerinda/cartilha_letramento_racial>.
+    <http://purl.org/dc/elements/1.1/source> <https://sarahrubia.github.io/narrativa-almerinda/cartilha_letramento_racial>.

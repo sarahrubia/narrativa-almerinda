@@ -1,2 +1,2 @@
-<sarahrubia.github.io/narrativa-almerinda/concept_garantia-legal-trabalhador> a <http://www.w3.org/2004/02/skos/core#Concept>;
+<https://sarahrubia.github.io/narrativa-almerinda/concept_garantia-legal-trabalhador> a <http://www.w3.org/2004/02/skos/core#Concept>;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Garantia legal do trabalhador"@pt.

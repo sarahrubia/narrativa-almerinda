@@ -1,5 +1,5 @@
-<sarahrubia.github.io/narrativa-almerinda/concept_pioneirismo-historico> a <http://www.w3.org/2004/02/skos/core#Concept>;
+<https://sarahrubia.github.io/narrativa-almerinda/concept_pioneirismo-historico> a <http://www.w3.org/2004/02/skos/core#Concept>;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Pioneirismo histórico"@pt;
-    <http://www.w3.org/2004/02/skos/core#broader> <sarahrubia.github.io/narrativa-almerinda/concept_marcos-historicos>;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <sarahrubia.github.io/narrativa-almerinda/narrative-ontology-concepts>;
+    <http://www.w3.org/2004/02/skos/core#broader> <https://sarahrubia.github.io/narrativa-almerinda/concept_marcos-historicos>;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://sarahrubia.github.io/narrativa-almerinda/almerinda-narrative-concepts>;
     <http://www.w3.org/2000/01/rdf-schema#comment> "Ações ou posições que estabelecem precedentes históricos."@pt.

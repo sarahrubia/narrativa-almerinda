@@ -1,5 +1,5 @@
-<sarahrubia.github.io/narrativa-almerinda/org_fbpm> a <http://erlangen-crm.org/current/E74_Group>, <https://dlnarratives.eu/ontology#Actor>, <http://xmlns.com/foaf/0.1/Organization>, <http://schema.org/Organization>;
+<https://sarahrubia.github.io/narrativa-almerinda/org_fbpm> a <http://erlangen-crm.org/current/E74_Group>, <https://dlnarratives.eu/ontology#Actor>, <http://xmlns.com/foaf/0.1/Organization>, <http://schema.org/Organization>;
     <http://www.w3.org/2000/01/rdf-schema#label> "Federação Brasileira pelo Progresso da Mulher (FBPM)"@pt;
-    <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q10280186>;
+    <http://www.w3.org/2002/07/owl#sameAs> <https://www.wikidata.org/wiki/Q10280539>;
     <http://xmlns.com/foaf/0.1/name> "Federação Brasileira pelo Progresso da Mulher"@pt;
     <http://www.w3.org/2000/01/rdf-schema#comment> "Organização feminista que, embora majoritariamente branca, recebeu a contribuição de Almerinda para incorporar a perspectiva da mulher negra e trabalhadora."@pt.
