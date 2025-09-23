@@ -38,7 +38,7 @@ async function splitTtl(inputFile) {
 async function processSubjects(subjects) {
   for (const subject in subjects) {
     const quads = subjects[subject];
-    const writer = new Writer();
+    const writer = new Writer({ format: 'text/turtle' });
     writer.addQuads(quads);
 
     writer.end((error, result) => {
