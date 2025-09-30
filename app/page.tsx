@@ -9,7 +9,7 @@ import Link from "next/link"
 export default function KnowledgeGraphPortfolio() {
   const handleVisualizeGraph = () => {
     try {
-      window.open("https://s.zazuko.com/3p8qK7Y", "_blank");
+      window.open("https://s.zazuko.com/2K9BHuf", "_blank");
     } catch (error) {
       console.error("Erro ao abrir a URL:", error);
       alert("Não foi possível abrir a ferramenta de visualização.");
